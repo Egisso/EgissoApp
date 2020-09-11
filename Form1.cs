@@ -38,7 +38,7 @@ namespace EgissoApp
 
             dataGridView1.DataSource = ds.Tables[0].DefaultView;//Заполняем созданный на форме dataGridView1
 
-            conn.Close();//Закрываем соединение
+            conn.Close();// Закрываем соединение
         }
     }
 }
