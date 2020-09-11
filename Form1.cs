@@ -24,7 +24,7 @@ namespace EgissoApp
         {
             DataSet ds = new DataSet(); //Создаем объект класса DataSet
 
-            string sql = "Select * From [table]"; //Sql запрос (достать все из таблицы customer)
+            string sql = "Select * From [table]"; //Sql запрос (достать все из таблицы table)
 
             string path = "egissodb.db"; //Путь к файлу БД
 
