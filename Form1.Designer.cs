@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.импортИзCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортВXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.массовыеОперацииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изменитьОтчетныйПериодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.упрощенныйРедакторСуммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.экспортВXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,6 +64,12 @@
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(37, 17);
+            this.toolStripStatusLabel1.Text = "Итоги";
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -76,21 +82,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(37, 17);
-            this.toolStripStatusLabel1.Text = "Итоги";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 379);
-            this.dataGridView1.TabIndex = 2;
             // 
             // toolStripButton1
             // 
@@ -121,6 +112,15 @@
             this.toolStripButton3.Size = new System.Drawing.Size(71, 22);
             this.toolStripButton3.Text = "Удалить";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 49);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(800, 379);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -146,13 +146,19 @@
             // импортИзCSVToolStripMenuItem
             // 
             this.импортИзCSVToolStripMenuItem.Name = "импортИзCSVToolStripMenuItem";
-            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.импортИзCSVToolStripMenuItem.Text = "Импорт из CSV";
+            // 
+            // экспортВXMLToolStripMenuItem
+            // 
+            this.экспортВXMLToolStripMenuItem.Name = "экспортВXMLToolStripMenuItem";
+            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.экспортВXMLToolStripMenuItem.Text = "Экспорт в CSV";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // массовыеОперацииToolStripMenuItem
@@ -182,12 +188,6 @@
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
             // 
-            // экспортВXMLToolStripMenuItem
-            // 
-            this.экспортВXMLToolStripMenuItem.Name = "экспортВXMLToolStripMenuItem";
-            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.экспортВXMLToolStripMenuItem.Text = "Экспорт в CSV";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +202,7 @@
             this.MinimumSize = new System.Drawing.Size(808, 477);
             this.Name = "Form1";
             this.Text = "Формирование данных для ЕГИССО";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
