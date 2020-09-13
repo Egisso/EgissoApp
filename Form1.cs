@@ -40,5 +40,11 @@ namespace EgissoApp
 
             conn.Close();//Закрываем соединение
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Editform f = new Editform();
+            f.Show();
+        }
     }
 }
