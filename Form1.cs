@@ -46,5 +46,10 @@ namespace EgissoApp
             Editform f = new Editform();
             f.Show();
         }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
