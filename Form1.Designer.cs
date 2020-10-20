@@ -36,6 +36,7 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -48,7 +49,6 @@
             this.изменитьОтчетныйПериодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.упрощенныйРедакторСуммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -107,6 +107,11 @@
             this.toolStripButton2.Size = new System.Drawing.Size(106, 22);
             this.toolStripButton2.Text = "Редактировать";
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(6, 25);
+            // 
             // toolStripButton3
             // 
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
@@ -152,19 +157,19 @@
             // импортИзCSVToolStripMenuItem
             // 
             this.импортИзCSVToolStripMenuItem.Name = "импортИзCSVToolStripMenuItem";
-            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.импортИзCSVToolStripMenuItem.Text = "Импорт из CSV";
             // 
             // экспортВXMLToolStripMenuItem
             // 
             this.экспортВXMLToolStripMenuItem.Name = "экспортВXMLToolStripMenuItem";
-            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.экспортВXMLToolStripMenuItem.Text = "Экспорт в CSV";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // массовыеОперацииToolStripMenuItem
@@ -194,11 +199,6 @@
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
             this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(6, 25);
             // 
             // Form1
             // 

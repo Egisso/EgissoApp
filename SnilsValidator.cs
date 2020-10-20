@@ -4,10 +4,9 @@ namespace EgissoApp
 {
     class SnilsValidator
     {
-        public Boolean SNILSValidate(String snils)
+        public static Boolean SNILSValidate(String snils)
         {
-            snils.Replace(" ", "");
-            snils.Replace("-", "");
+            snils = snils.Replace(" ", "").Replace("-", "");
 
             int controlSum = SNILSContolCalc(snils);
             int strControlSum = int.Parse(snils.Substring(9, 2));
