@@ -95,6 +95,12 @@
             this.pictNameRecip = new System.Windows.Forms.PictureBox();
             this.pictPatronymic_recip = new System.Windows.Forms.PictureBox();
             this.pictSnilsRecip = new System.Windows.Forms.PictureBox();
+            this.pictGenderRecip = new System.Windows.Forms.PictureBox();
+            this.pictBirthdateRecip = new System.Windows.Forms.PictureBox();
+            this.pictDocTypeRecip = new System.Windows.Forms.PictureBox();
+            this.pictDocSeriesRecip = new System.Windows.Forms.PictureBox();
+            this.pict_IssueDate_recip = new System.Windows.Forms.PictureBox();
+            this.pictNumberRecip = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -104,9 +110,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictGenderRecip = new System.Windows.Forms.PictureBox();
-            this.pictDocTypeRecip = new System.Windows.Forms.PictureBox();
-            this.pictBirthdateRecip = new System.Windows.Forms.PictureBox();
+            this.pictIssuerRecip = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -118,11 +122,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictNameRecip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictPatronymic_recip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSnilsRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictDocSeriesRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_IssueDate_recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictNumberRecip)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictIssuerRecip)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -580,7 +588,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel2.Controls.Add(this.SNILS_recip, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.Name_recip, 2, 2);
@@ -609,8 +617,12 @@
             this.tableLayoutPanel2.Controls.Add(this.pictPatronymic_recip, 4, 3);
             this.tableLayoutPanel2.Controls.Add(this.pictSnilsRecip, 3, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictGenderRecip, 7, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictDocTypeRecip, 8, 2);
             this.tableLayoutPanel2.Controls.Add(this.pictBirthdateRecip, 11, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pictDocTypeRecip, 8, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pictDocSeriesRecip, 7, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pict_IssueDate_recip, 11, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pictNumberRecip, 11, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pictIssuerRecip, 11, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -629,7 +641,7 @@
             this.SNILS_recip.Location = new System.Drawing.Point(87, 108);
             this.SNILS_recip.Mask = "000-000-000 00";
             this.SNILS_recip.Name = "SNILS_recip";
-            this.SNILS_recip.Size = new System.Drawing.Size(93, 20);
+            this.SNILS_recip.Size = new System.Drawing.Size(90, 20);
             this.SNILS_recip.TabIndex = 3;
             this.SNILS_recip.Click += new System.EventHandler(this.SNILS_Click);
             this.SNILS_recip.Enter += new System.EventHandler(this.SNILS_Enter);
@@ -654,7 +666,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.Name_recip, 2);
             this.Name_recip.Location = new System.Drawing.Point(87, 52);
             this.Name_recip.Name = "Name_recip";
-            this.Name_recip.Size = new System.Drawing.Size(123, 20);
+            this.Name_recip.Size = new System.Drawing.Size(118, 20);
             this.Name_recip.TabIndex = 1;
             this.Name_recip.Enter += new System.EventHandler(this.FIO_Enter);
             this.Name_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
@@ -678,7 +690,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.FamilyName_recip, 2);
             this.FamilyName_recip.Location = new System.Drawing.Point(87, 24);
             this.FamilyName_recip.Name = "FamilyName_recip";
-            this.FamilyName_recip.Size = new System.Drawing.Size(123, 20);
+            this.FamilyName_recip.Size = new System.Drawing.Size(118, 20);
             this.FamilyName_recip.TabIndex = 0;
             this.FamilyName_recip.Enter += new System.EventHandler(this.FIO_Enter);
             this.FamilyName_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
@@ -692,7 +704,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.Patronymic_recip, 2);
             this.Patronymic_recip.Location = new System.Drawing.Point(87, 80);
             this.Patronymic_recip.Name = "Patronymic_recip";
-            this.Patronymic_recip.Size = new System.Drawing.Size(123, 20);
+            this.Patronymic_recip.Size = new System.Drawing.Size(118, 20);
             this.Patronymic_recip.TabIndex = 2;
             this.Patronymic_recip.Enter += new System.EventHandler(this.FIO_Enter);
             this.Patronymic_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
@@ -736,12 +748,12 @@
             // 
             this.BirthDate_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.BirthDate_recip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BirthDate_recip.Location = new System.Drawing.Point(639, 24);
+            this.BirthDate_recip.Location = new System.Drawing.Point(634, 24);
             this.BirthDate_recip.Name = "BirthDate_recip";
             this.BirthDate_recip.Size = new System.Drawing.Size(99, 20);
             this.BirthDate_recip.TabIndex = 5;
             this.BirthDate_recip.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.BirthDate_recip.ValueChanged += new System.EventHandler(this.BirthDate_recip_ValueChanged);
+            this.BirthDate_recip.ValueChanged += new System.EventHandler(this.Dates_ValueChanged);
             // 
             // doc_IssueDate_recip
             // 
@@ -749,26 +761,31 @@
             this.doc_IssueDate_recip.CustomFormat = "";
             this.doc_IssueDate_recip.Enabled = false;
             this.doc_IssueDate_recip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.doc_IssueDate_recip.Location = new System.Drawing.Point(639, 52);
+            this.doc_IssueDate_recip.Location = new System.Drawing.Point(634, 52);
             this.doc_IssueDate_recip.Name = "doc_IssueDate_recip";
             this.doc_IssueDate_recip.Size = new System.Drawing.Size(99, 20);
             this.doc_IssueDate_recip.TabIndex = 7;
             this.doc_IssueDate_recip.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.doc_IssueDate_recip.ValueChanged += new System.EventHandler(this.Dates_ValueChanged);
             // 
             // doc_Number_recip
             // 
             this.doc_Number_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.doc_Number_recip.Enabled = false;
-            this.doc_Number_recip.Location = new System.Drawing.Point(639, 80);
+            this.doc_Number_recip.Location = new System.Drawing.Point(634, 80);
             this.doc_Number_recip.Name = "doc_Number_recip";
             this.doc_Number_recip.Size = new System.Drawing.Size(99, 20);
             this.doc_Number_recip.TabIndex = 9;
+            this.doc_Number_recip.Enter += new System.EventHandler(this.doc_Number_recip_Enter);
+            this.doc_Number_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Number_recip_KeyDown);
+            this.doc_Number_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Number_recip_KeyPress);
+            this.doc_Number_recip.Leave += new System.EventHandler(this.doc_Number_recip_Leave);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(544, 27);
+            this.label2.Location = new System.Drawing.Point(539, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 13);
             this.label2.TabIndex = 11;
@@ -778,7 +795,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(544, 55);
+            this.label8.Location = new System.Drawing.Point(539, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 17;
@@ -788,7 +805,7 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(544, 83);
+            this.label10.Location = new System.Drawing.Point(539, 83);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 13);
             this.label10.TabIndex = 19;
@@ -801,11 +818,12 @@
             this.Gender_recip.Items.AddRange(new object[] {
             "М",
             "Ж"});
-            this.Gender_recip.Location = new System.Drawing.Point(321, 23);
+            this.Gender_recip.Location = new System.Drawing.Point(316, 23);
             this.Gender_recip.Name = "Gender_recip";
             this.Gender_recip.Size = new System.Drawing.Size(48, 21);
             this.Gender_recip.TabIndex = 4;
             this.Gender_recip.SelectionChangeCommitted += new System.EventHandler(this.Gender_recip_SelectionChangeCommitted);
+            this.Gender_recip.SelectedValueChanged += new System.EventHandler(this.Gender_recip_SelectedValueChanged);
             // 
             // doctype_recip
             // 
@@ -816,7 +834,7 @@
             "Нет документа",
             "Паспорт гражданина РФ",
             "Свидетельство о рождении"});
-            this.doctype_recip.Location = new System.Drawing.Point(321, 51);
+            this.doctype_recip.Location = new System.Drawing.Point(316, 51);
             this.doctype_recip.Name = "doctype_recip";
             this.doctype_recip.Size = new System.Drawing.Size(189, 21);
             this.doctype_recip.TabIndex = 6;
@@ -826,29 +844,38 @@
             // doc_Series_recip
             // 
             this.doc_Series_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel2.SetColumnSpan(this.doc_Series_recip, 2);
             this.doc_Series_recip.Enabled = false;
-            this.doc_Series_recip.Location = new System.Drawing.Point(321, 80);
+            this.doc_Series_recip.Location = new System.Drawing.Point(316, 80);
             this.doc_Series_recip.MaxLength = 10;
             this.doc_Series_recip.Name = "doc_Series_recip";
             this.doc_Series_recip.Size = new System.Drawing.Size(66, 20);
             this.doc_Series_recip.TabIndex = 8;
+            this.doc_Series_recip.Enter += new System.EventHandler(this.Doc_Series_recip_Enter);
+            this.doc_Series_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Series_recip_KeyDown);
+            this.doc_Series_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Series_recip_KeyPress);
+            this.doc_Series_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Series_recip_KeyUp);
+            this.doc_Series_recip.Leave += new System.EventHandler(this.doc_Series_recip_Leave);
             // 
             // doc_Issuer_recip
             // 
             this.doc_Issuer_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel2.SetColumnSpan(this.doc_Issuer_recip, 5);
             this.doc_Issuer_recip.Enabled = false;
-            this.doc_Issuer_recip.Location = new System.Drawing.Point(321, 108);
+            this.doc_Issuer_recip.Location = new System.Drawing.Point(316, 108);
             this.doc_Issuer_recip.Name = "doc_Issuer_recip";
             this.doc_Issuer_recip.Size = new System.Drawing.Size(417, 20);
             this.doc_Issuer_recip.TabIndex = 10;
+            this.doc_Issuer_recip.Enter += new System.EventHandler(this.doc_Issuer_recip_Enter);
+            this.doc_Issuer_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Issuer_recip_KeyDown);
+            this.doc_Issuer_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Issuer_recip_KeyPress);
+            this.doc_Issuer_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Issuer_recip_KeyUp);
+            this.doc_Issuer_recip.Leave += new System.EventHandler(this.doc_Issuer_recip_Leave);
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(242, 112);
+            this.label11.Location = new System.Drawing.Point(237, 112);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 20;
@@ -858,7 +885,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(242, 83);
+            this.label9.Location = new System.Drawing.Point(237, 83);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 13);
             this.label9.TabIndex = 18;
@@ -868,7 +895,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(242, 55);
+            this.label7.Location = new System.Drawing.Point(237, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 0;
@@ -878,7 +905,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(242, 27);
+            this.label5.Location = new System.Drawing.Point(237, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 15;
@@ -886,7 +913,7 @@
             // 
             // pictFamRecip
             // 
-            this.pictFamRecip.Location = new System.Drawing.Point(216, 23);
+            this.pictFamRecip.Location = new System.Drawing.Point(211, 23);
             this.pictFamRecip.Name = "pictFamRecip";
             this.pictFamRecip.Size = new System.Drawing.Size(20, 22);
             this.pictFamRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -895,7 +922,7 @@
             // 
             // pictNameRecip
             // 
-            this.pictNameRecip.Location = new System.Drawing.Point(216, 51);
+            this.pictNameRecip.Location = new System.Drawing.Point(211, 51);
             this.pictNameRecip.Name = "pictNameRecip";
             this.pictNameRecip.Size = new System.Drawing.Size(20, 22);
             this.pictNameRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -904,7 +931,7 @@
             // 
             // pictPatronymic_recip
             // 
-            this.pictPatronymic_recip.Location = new System.Drawing.Point(216, 79);
+            this.pictPatronymic_recip.Location = new System.Drawing.Point(211, 79);
             this.pictPatronymic_recip.Name = "pictPatronymic_recip";
             this.pictPatronymic_recip.Size = new System.Drawing.Size(20, 22);
             this.pictPatronymic_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -913,12 +940,66 @@
             // 
             // pictSnilsRecip
             // 
-            this.pictSnilsRecip.Location = new System.Drawing.Point(186, 107);
+            this.pictSnilsRecip.Location = new System.Drawing.Point(183, 107);
             this.pictSnilsRecip.Name = "pictSnilsRecip";
             this.pictSnilsRecip.Size = new System.Drawing.Size(20, 22);
             this.pictSnilsRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictSnilsRecip.TabIndex = 22;
             this.pictSnilsRecip.TabStop = false;
+            // 
+            // pictGenderRecip
+            // 
+            this.pictGenderRecip.Location = new System.Drawing.Point(390, 23);
+            this.pictGenderRecip.Name = "pictGenderRecip";
+            this.pictGenderRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictGenderRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictGenderRecip.TabIndex = 22;
+            this.pictGenderRecip.TabStop = false;
+            // 
+            // pictBirthdateRecip
+            // 
+            this.pictBirthdateRecip.Location = new System.Drawing.Point(739, 23);
+            this.pictBirthdateRecip.Name = "pictBirthdateRecip";
+            this.pictBirthdateRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictBirthdateRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictBirthdateRecip.TabIndex = 22;
+            this.pictBirthdateRecip.TabStop = false;
+            // 
+            // pictDocTypeRecip
+            // 
+            this.pictDocTypeRecip.Location = new System.Drawing.Point(511, 51);
+            this.pictDocTypeRecip.Name = "pictDocTypeRecip";
+            this.pictDocTypeRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictDocTypeRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictDocTypeRecip.TabIndex = 22;
+            this.pictDocTypeRecip.TabStop = false;
+            // 
+            // pictDocSeriesRecip
+            // 
+            this.pictDocSeriesRecip.Location = new System.Drawing.Point(390, 79);
+            this.pictDocSeriesRecip.Name = "pictDocSeriesRecip";
+            this.pictDocSeriesRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictDocSeriesRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictDocSeriesRecip.TabIndex = 22;
+            this.pictDocSeriesRecip.TabStop = false;
+            // 
+            // pict_IssueDate_recip
+            // 
+            this.pict_IssueDate_recip.Location = new System.Drawing.Point(739, 51);
+            this.pict_IssueDate_recip.Name = "pict_IssueDate_recip";
+            this.pict_IssueDate_recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_IssueDate_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_IssueDate_recip.TabIndex = 22;
+            this.pict_IssueDate_recip.TabStop = false;
+            // 
+            // pictNumberRecip
+            // 
+            this.pictNumberRecip.Location = new System.Drawing.Point(739, 79);
+            this.pictNumberRecip.Name = "pictNumberRecip";
+            this.pictNumberRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictNumberRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictNumberRecip.TabIndex = 22;
+            this.pictNumberRecip.TabStop = false;
             // 
             // groupBox4
             // 
@@ -1016,32 +1097,14 @@
             this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictGenderRecip
+            // pictIssuerRecip
             // 
-            this.pictGenderRecip.Location = new System.Drawing.Point(395, 23);
-            this.pictGenderRecip.Name = "pictGenderRecip";
-            this.pictGenderRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictGenderRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictGenderRecip.TabIndex = 22;
-            this.pictGenderRecip.TabStop = false;
-            // 
-            // pictDocTypeRecip
-            // 
-            this.pictDocTypeRecip.Location = new System.Drawing.Point(516, 51);
-            this.pictDocTypeRecip.Name = "pictDocTypeRecip";
-            this.pictDocTypeRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictDocTypeRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictDocTypeRecip.TabIndex = 22;
-            this.pictDocTypeRecip.TabStop = false;
-            // 
-            // pictBirthdateRecip
-            // 
-            this.pictBirthdateRecip.Location = new System.Drawing.Point(744, 23);
-            this.pictBirthdateRecip.Name = "pictBirthdateRecip";
-            this.pictBirthdateRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictBirthdateRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictBirthdateRecip.TabIndex = 22;
-            this.pictBirthdateRecip.TabStop = false;
+            this.pictIssuerRecip.Location = new System.Drawing.Point(739, 107);
+            this.pictIssuerRecip.Name = "pictIssuerRecip";
+            this.pictIssuerRecip.Size = new System.Drawing.Size(20, 22);
+            this.pictIssuerRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictIssuerRecip.TabIndex = 22;
+            this.pictIssuerRecip.TabStop = false;
             // 
             // Editform
             // 
@@ -1071,12 +1134,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictNameRecip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictPatronymic_recip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSnilsRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictDocSeriesRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_IssueDate_recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictNumberRecip)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictIssuerRecip)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1160,5 +1227,9 @@
         private System.Windows.Forms.PictureBox pictGenderRecip;
         private System.Windows.Forms.PictureBox pictDocTypeRecip;
         private System.Windows.Forms.PictureBox pictBirthdateRecip;
+        private System.Windows.Forms.PictureBox pictDocSeriesRecip;
+        private System.Windows.Forms.PictureBox pict_IssueDate_recip;
+        private System.Windows.Forms.PictureBox pictNumberRecip;
+        private System.Windows.Forms.PictureBox pictIssuerRecip;
     }
 }
