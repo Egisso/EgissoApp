@@ -6,13 +6,18 @@ namespace EgissoApp
     {
         public static Boolean SNILSValidate(String snils)
         {
-            snils = snils.Replace(" ", "").Replace("-", "");
-
-            int controlSum = SNILSContolCalc(snils);
-            int strControlSum = int.Parse(snils.Substring(9, 2));
-
-            if (controlSum == strControlSum) return true;
-            else return false;
+            try
+            {
+                snils = snils.Replace(" ", "").Replace("-", "");
+                int controlSum = SNILSContolCalc(snils);
+                int strControlSum = int.Parse(snils.Substring(9, 2));
+                return (controlSum == strControlSum);
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
 
         public static int SNILSContolCalc(String snils)
