@@ -33,39 +33,50 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.SNILS_reason = new System.Windows.Forms.MaskedTextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.doctype_reason = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.Name_reason = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.FamilyName_reason = new System.Windows.Forms.TextBox();
             this.Patronymic_reason = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.BirthDate_reason = new System.Windows.Forms.DateTimePicker();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Gender_reason = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.doc_Issuer_reason = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.BirthDate_reason = new System.Windows.Forms.DateTimePicker();
             this.doc_IssueDate_reason = new System.Windows.Forms.DateTimePicker();
             this.doc_Number_reason = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Gender_reason = new System.Windows.Forms.ComboBox();
+            this.doctype_reason = new System.Windows.Forms.ComboBox();
             this.doc_Series_reason = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.doc_Issuer_reason = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pict_FamilyName_reason = new System.Windows.Forms.PictureBox();
+            this.pict_Name_reason = new System.Windows.Forms.PictureBox();
+            this.pict_Patronymic_reason = new System.Windows.Forms.PictureBox();
+            this.pict_SNILS_reason = new System.Windows.Forms.PictureBox();
+            this.pict_Gender_reason = new System.Windows.Forms.PictureBox();
+            this.pict_doctype_reason = new System.Windows.Forms.PictureBox();
+            this.pict_doc_Series_reason = new System.Windows.Forms.PictureBox();
+            this.pict_BirthDate_reason = new System.Windows.Forms.PictureBox();
+            this.pict_doc_IssueDate_reason = new System.Windows.Forms.PictureBox();
+            this.pict_doc_Number_reason = new System.Windows.Forms.PictureBox();
+            this.pict_doc_Issuer_reason = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.decision_date = new System.Windows.Forms.DateTimePicker();
-            this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.dateFinish = new System.Windows.Forms.DateTimePicker();
-            this.label24 = new System.Windows.Forms.Label();
-            this.amount = new System.Windows.Forms.MaskedTextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dateStart = new System.Windows.Forms.DateTimePicker();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.decision_date = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.SNILS_recip = new System.Windows.Forms.MaskedTextBox();
@@ -91,16 +102,17 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictFamRecip = new System.Windows.Forms.PictureBox();
-            this.pictNameRecip = new System.Windows.Forms.PictureBox();
-            this.pictPatronymic_recip = new System.Windows.Forms.PictureBox();
-            this.pictSnilsRecip = new System.Windows.Forms.PictureBox();
-            this.pictGenderRecip = new System.Windows.Forms.PictureBox();
-            this.pictBirthdateRecip = new System.Windows.Forms.PictureBox();
-            this.pictDocTypeRecip = new System.Windows.Forms.PictureBox();
-            this.pictDocSeriesRecip = new System.Windows.Forms.PictureBox();
-            this.pict_IssueDate_recip = new System.Windows.Forms.PictureBox();
-            this.pictNumberRecip = new System.Windows.Forms.PictureBox();
+            this.pict_Fam_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_Name_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_Patronymic_recip = new System.Windows.Forms.PictureBox();
+            this.pict_Snils_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_Gender_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_BirthDate_recip = new System.Windows.Forms.PictureBox();
+            this.pict_Doctype_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_Doc_Series_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_doc_IssueDate_recip = new System.Windows.Forms.PictureBox();
+            this.pict_Doc_Number_Recip = new System.Windows.Forms.PictureBox();
+            this.pict_doc_Issuer_recip = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -110,27 +122,38 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictIssuerRecip = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_FamilyName_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Name_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Patronymic_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_SNILS_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Gender_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doctype_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Series_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_BirthDate_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_IssueDate_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Number_reason)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Issuer_reason)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictFamRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictNameRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictPatronymic_recip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSnilsRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocSeriesRecip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pict_IssueDate_recip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictNumberRecip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Fam_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Name_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Patronymic_recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Snils_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Gender_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_BirthDate_recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doctype_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doc_Series_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_IssueDate_recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doc_Number_Recip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Issuer_recip)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictIssuerRecip)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -168,38 +191,53 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 8;
+            this.tableLayoutPanel3.ColumnCount = 12;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.375F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.625F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.81F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.19F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
-            this.tableLayoutPanel3.Controls.Add(this.label12, 4, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label13, 4, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label14, 6, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label15, 4, 2);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel3.Controls.Add(this.SNILS_reason, 2, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label16, 6, 2);
-            this.tableLayoutPanel3.Controls.Add(this.doctype_reason, 5, 2);
             this.tableLayoutPanel3.Controls.Add(this.label17, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.Name_reason, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.FamilyName_reason, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.Patronymic_reason, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.label19, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label20, 6, 1);
-            this.tableLayoutPanel3.Controls.Add(this.BirthDate_reason, 7, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label21, 4, 1);
-            this.tableLayoutPanel3.Controls.Add(this.Gender_reason, 5, 1);
             this.tableLayoutPanel3.Controls.Add(this.label22, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.doc_Issuer_reason, 5, 4);
-            this.tableLayoutPanel3.Controls.Add(this.doc_IssueDate_reason, 7, 2);
-            this.tableLayoutPanel3.Controls.Add(this.doc_Number_reason, 7, 3);
-            this.tableLayoutPanel3.Controls.Add(this.doc_Series_reason, 5, 3);
             this.tableLayoutPanel3.Controls.Add(this.label23, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.BirthDate_reason, 10, 1);
+            this.tableLayoutPanel3.Controls.Add(this.doc_IssueDate_reason, 10, 2);
+            this.tableLayoutPanel3.Controls.Add(this.doc_Number_reason, 10, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label20, 9, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label16, 9, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label14, 9, 3);
+            this.tableLayoutPanel3.Controls.Add(this.Gender_reason, 6, 1);
+            this.tableLayoutPanel3.Controls.Add(this.doctype_reason, 6, 2);
+            this.tableLayoutPanel3.Controls.Add(this.doc_Series_reason, 6, 3);
+            this.tableLayoutPanel3.Controls.Add(this.doc_Issuer_reason, 6, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label21, 5, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label15, 5, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label13, 5, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label12, 5, 4);
+            this.tableLayoutPanel3.Controls.Add(this.pict_FamilyName_reason, 4, 1);
+            this.tableLayoutPanel3.Controls.Add(this.pict_Name_reason, 4, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pict_Patronymic_reason, 4, 3);
+            this.tableLayoutPanel3.Controls.Add(this.pict_SNILS_reason, 3, 4);
+            this.tableLayoutPanel3.Controls.Add(this.pict_Gender_reason, 7, 1);
+            this.tableLayoutPanel3.Controls.Add(this.pict_doctype_reason, 8, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pict_doc_Series_reason, 7, 3);
+            this.tableLayoutPanel3.Controls.Add(this.pict_BirthDate_reason, 11, 1);
+            this.tableLayoutPanel3.Controls.Add(this.pict_doc_IssueDate_reason, 11, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pict_doc_Number_reason, 11, 3);
+            this.tableLayoutPanel3.Controls.Add(this.pict_doc_Issuer_reason, 11, 4);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -210,49 +248,8 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(780, 133);
             this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(247, 112);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Кем выдан";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(247, 83);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 13);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "Серия";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(525, 83);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "Номер";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(247, 55);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 13);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Документ";
             // 
             // SNILS_reason
             // 
@@ -260,32 +257,10 @@
             this.SNILS_reason.Location = new System.Drawing.Point(87, 108);
             this.SNILS_reason.Mask = "000-000-000 00";
             this.SNILS_reason.Name = "SNILS_reason";
-            this.SNILS_reason.Size = new System.Drawing.Size(100, 20);
+            this.SNILS_reason.Size = new System.Drawing.Size(76, 20);
             this.SNILS_reason.TabIndex = 14;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(525, 55);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(73, 13);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Дата выдачи";
-            // 
-            // doctype_reason
-            // 
-            this.doctype_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.doctype_reason.FormattingEnabled = true;
-            this.doctype_reason.Items.AddRange(new object[] {
-            "Нет документа",
-            "Паспорт гражданина РФ",
-            "Свидетельство о рождении"});
-            this.doctype_reason.Location = new System.Drawing.Point(326, 51);
-            this.doctype_reason.Name = "doctype_reason";
-            this.doctype_reason.Size = new System.Drawing.Size(193, 21);
-            this.doctype_reason.TabIndex = 17;
-            this.doctype_reason.SelectedIndexChanged += new System.EventHandler(this.doctype_reason_SelectedIndexChanged);
+            this.SNILS_reason.Click += new System.EventHandler(this.SNILS_reason_Click);
+            this.SNILS_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SNILS_reason_KeyUp);
             // 
             // label17
             // 
@@ -300,10 +275,12 @@
             // Name_reason
             // 
             this.Name_reason.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.SetColumnSpan(this.Name_reason, 2);
             this.Name_reason.Location = new System.Drawing.Point(87, 52);
             this.Name_reason.Name = "Name_reason";
-            this.Name_reason.Size = new System.Drawing.Size(129, 20);
+            this.Name_reason.Size = new System.Drawing.Size(101, 20);
             this.Name_reason.TabIndex = 12;
+            this.Name_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Name_reason_KeyUp);
             // 
             // label18
             // 
@@ -318,18 +295,22 @@
             // FamilyName_reason
             // 
             this.FamilyName_reason.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.SetColumnSpan(this.FamilyName_reason, 2);
             this.FamilyName_reason.Location = new System.Drawing.Point(87, 24);
             this.FamilyName_reason.Name = "FamilyName_reason";
-            this.FamilyName_reason.Size = new System.Drawing.Size(129, 20);
+            this.FamilyName_reason.Size = new System.Drawing.Size(101, 20);
             this.FamilyName_reason.TabIndex = 11;
+            this.FamilyName_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FamilyName_reason_KeyUp);
             // 
             // Patronymic_reason
             // 
             this.Patronymic_reason.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.SetColumnSpan(this.Patronymic_reason, 2);
             this.Patronymic_reason.Location = new System.Drawing.Point(87, 80);
             this.Patronymic_reason.Name = "Patronymic_reason";
-            this.Patronymic_reason.Size = new System.Drawing.Size(129, 20);
+            this.Patronymic_reason.Size = new System.Drawing.Size(101, 20);
             this.Patronymic_reason.TabIndex = 13;
+            this.Patronymic_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Patronymic_reason_KeyUp);
             // 
             // label19
             // 
@@ -341,48 +322,6 @@
             this.label19.TabIndex = 14;
             this.label19.Text = "Отчество";
             // 
-            // label20
-            // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(525, 27);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 13);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "Дата рождения";
-            // 
-            // BirthDate_reason
-            // 
-            this.BirthDate_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BirthDate_reason.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BirthDate_reason.Location = new System.Drawing.Point(644, 24);
-            this.BirthDate_reason.Name = "BirthDate_reason";
-            this.BirthDate_reason.Size = new System.Drawing.Size(100, 20);
-            this.BirthDate_reason.TabIndex = 16;
-            this.BirthDate_reason.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(247, 27);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(27, 13);
-            this.label21.TabIndex = 15;
-            this.label21.Text = "Пол";
-            // 
-            // Gender_reason
-            // 
-            this.Gender_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Gender_reason.FormattingEnabled = true;
-            this.Gender_reason.Items.AddRange(new object[] {
-            "М",
-            "Ж"});
-            this.Gender_reason.Location = new System.Drawing.Point(326, 23);
-            this.Gender_reason.Name = "Gender_reason";
-            this.Gender_reason.Size = new System.Drawing.Size(48, 21);
-            this.Gender_reason.TabIndex = 15;
-            // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -393,42 +332,6 @@
             this.label22.TabIndex = 16;
             this.label22.Text = "Снилс";
             // 
-            // doc_Issuer_reason
-            // 
-            this.doc_Issuer_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel3.SetColumnSpan(this.doc_Issuer_reason, 3);
-            this.doc_Issuer_reason.Location = new System.Drawing.Point(326, 108);
-            this.doc_Issuer_reason.Name = "doc_Issuer_reason";
-            this.doc_Issuer_reason.Size = new System.Drawing.Size(418, 20);
-            this.doc_Issuer_reason.TabIndex = 21;
-            // 
-            // doc_IssueDate_reason
-            // 
-            this.doc_IssueDate_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.doc_IssueDate_reason.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.doc_IssueDate_reason.Location = new System.Drawing.Point(644, 52);
-            this.doc_IssueDate_reason.Name = "doc_IssueDate_reason";
-            this.doc_IssueDate_reason.Size = new System.Drawing.Size(100, 20);
-            this.doc_IssueDate_reason.TabIndex = 18;
-            this.doc_IssueDate_reason.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
-            // doc_Number_reason
-            // 
-            this.doc_Number_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.doc_Number_reason.Location = new System.Drawing.Point(644, 80);
-            this.doc_Number_reason.Name = "doc_Number_reason";
-            this.doc_Number_reason.Size = new System.Drawing.Size(100, 20);
-            this.doc_Number_reason.TabIndex = 20;
-            // 
-            // doc_Series_reason
-            // 
-            this.doc_Series_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.doc_Series_reason.Location = new System.Drawing.Point(326, 80);
-            this.doc_Series_reason.MaxLength = 10;
-            this.doc_Series_reason.Name = "doc_Series_reason";
-            this.doc_Series_reason.Size = new System.Drawing.Size(66, 20);
-            this.doc_Series_reason.TabIndex = 19;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -436,10 +339,263 @@
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(23, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(646, 13);
+            this.label23.Size = new System.Drawing.Size(435, 20);
             this.label23.TabIndex = 21;
             this.label23.Text = "Для школ можно не заполнять , так как школьник является и получателем меры и лицо" +
     "м основанием для назначения меры";
+            // 
+            // BirthDate_reason
+            // 
+            this.BirthDate_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BirthDate_reason.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BirthDate_reason.Location = new System.Drawing.Point(617, 24);
+            this.BirthDate_reason.Name = "BirthDate_reason";
+            this.BirthDate_reason.Size = new System.Drawing.Size(99, 20);
+            this.BirthDate_reason.TabIndex = 16;
+            this.BirthDate_reason.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.BirthDate_reason.ValueChanged += new System.EventHandler(this.BirthDate_reason_ValueChanged);
+            // 
+            // doc_IssueDate_reason
+            // 
+            this.doc_IssueDate_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.doc_IssueDate_reason.Enabled = false;
+            this.doc_IssueDate_reason.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.doc_IssueDate_reason.Location = new System.Drawing.Point(617, 52);
+            this.doc_IssueDate_reason.Name = "doc_IssueDate_reason";
+            this.doc_IssueDate_reason.Size = new System.Drawing.Size(99, 20);
+            this.doc_IssueDate_reason.TabIndex = 18;
+            this.doc_IssueDate_reason.UseWaitCursor = true;
+            this.doc_IssueDate_reason.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.doc_IssueDate_reason.ValueChanged += new System.EventHandler(this.doc_IssueDate_reason_ValueChanged);
+            // 
+            // doc_Number_reason
+            // 
+            this.doc_Number_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.doc_Number_reason.Enabled = false;
+            this.doc_Number_reason.Location = new System.Drawing.Point(617, 80);
+            this.doc_Number_reason.Name = "doc_Number_reason";
+            this.doc_Number_reason.Size = new System.Drawing.Size(99, 20);
+            this.doc_Number_reason.TabIndex = 20;
+            this.doc_Number_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Number_reason_KeyUp);
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(522, 27);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(86, 13);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Дата рождения";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(522, 55);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(73, 13);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Дата выдачи";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(522, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 13);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Номер";
+            // 
+            // Gender_reason
+            // 
+            this.Gender_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Gender_reason.FormattingEnabled = true;
+            this.Gender_reason.Items.AddRange(new object[] {
+            "М",
+            "Ж"});
+            this.Gender_reason.Location = new System.Drawing.Point(299, 23);
+            this.Gender_reason.Name = "Gender_reason";
+            this.Gender_reason.Size = new System.Drawing.Size(48, 21);
+            this.Gender_reason.TabIndex = 15;
+            this.Gender_reason.SelectedIndexChanged += new System.EventHandler(this.Gender_reason_SelectedIndexChanged);
+            // 
+            // doctype_reason
+            // 
+            this.doctype_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tableLayoutPanel3.SetColumnSpan(this.doctype_reason, 2);
+            this.doctype_reason.FormattingEnabled = true;
+            this.doctype_reason.Items.AddRange(new object[] {
+            "Нет документа",
+            "Паспорт гражданина РФ",
+            "Свидетельство о рождении"});
+            this.doctype_reason.Location = new System.Drawing.Point(299, 51);
+            this.doctype_reason.Name = "doctype_reason";
+            this.doctype_reason.Size = new System.Drawing.Size(189, 21);
+            this.doctype_reason.TabIndex = 17;
+            this.doctype_reason.SelectedIndexChanged += new System.EventHandler(this.Doctype_reason_SelectedIndexChanged);
+            // 
+            // doc_Series_reason
+            // 
+            this.doc_Series_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.doc_Series_reason.Enabled = false;
+            this.doc_Series_reason.Location = new System.Drawing.Point(299, 80);
+            this.doc_Series_reason.MaxLength = 10;
+            this.doc_Series_reason.Name = "doc_Series_reason";
+            this.doc_Series_reason.Size = new System.Drawing.Size(66, 20);
+            this.doc_Series_reason.TabIndex = 19;
+            this.doc_Series_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Series_reason_KeyUp);
+            // 
+            // doc_Issuer_reason
+            // 
+            this.doc_Issuer_reason.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tableLayoutPanel3.SetColumnSpan(this.doc_Issuer_reason, 5);
+            this.doc_Issuer_reason.Enabled = false;
+            this.doc_Issuer_reason.Location = new System.Drawing.Point(299, 108);
+            this.doc_Issuer_reason.Name = "doc_Issuer_reason";
+            this.doc_Issuer_reason.Size = new System.Drawing.Size(417, 20);
+            this.doc_Issuer_reason.TabIndex = 21;
+            this.doc_Issuer_reason.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Issuer_reason_KeyUp);
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(220, 27);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(27, 13);
+            this.label21.TabIndex = 15;
+            this.label21.Text = "Пол";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(220, 55);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(58, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Документ";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(220, 83);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(38, 13);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Серия";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(220, 112);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 13);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Кем выдан";
+            // 
+            // pict_FamilyName_reason
+            // 
+            this.pict_FamilyName_reason.Location = new System.Drawing.Point(194, 23);
+            this.pict_FamilyName_reason.Name = "pict_FamilyName_reason";
+            this.pict_FamilyName_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_FamilyName_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_FamilyName_reason.TabIndex = 22;
+            this.pict_FamilyName_reason.TabStop = false;
+            // 
+            // pict_Name_reason
+            // 
+            this.pict_Name_reason.Location = new System.Drawing.Point(194, 51);
+            this.pict_Name_reason.Name = "pict_Name_reason";
+            this.pict_Name_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_Name_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Name_reason.TabIndex = 22;
+            this.pict_Name_reason.TabStop = false;
+            // 
+            // pict_Patronymic_reason
+            // 
+            this.pict_Patronymic_reason.Location = new System.Drawing.Point(194, 79);
+            this.pict_Patronymic_reason.Name = "pict_Patronymic_reason";
+            this.pict_Patronymic_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_Patronymic_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Patronymic_reason.TabIndex = 22;
+            this.pict_Patronymic_reason.TabStop = false;
+            // 
+            // pict_SNILS_reason
+            // 
+            this.pict_SNILS_reason.Location = new System.Drawing.Point(169, 107);
+            this.pict_SNILS_reason.Name = "pict_SNILS_reason";
+            this.pict_SNILS_reason.Size = new System.Drawing.Size(19, 22);
+            this.pict_SNILS_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_SNILS_reason.TabIndex = 22;
+            this.pict_SNILS_reason.TabStop = false;
+            // 
+            // pict_Gender_reason
+            // 
+            this.pict_Gender_reason.Location = new System.Drawing.Point(373, 23);
+            this.pict_Gender_reason.Name = "pict_Gender_reason";
+            this.pict_Gender_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_Gender_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Gender_reason.TabIndex = 22;
+            this.pict_Gender_reason.TabStop = false;
+            // 
+            // pict_doctype_reason
+            // 
+            this.pict_doctype_reason.Location = new System.Drawing.Point(494, 51);
+            this.pict_doctype_reason.Name = "pict_doctype_reason";
+            this.pict_doctype_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_doctype_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doctype_reason.TabIndex = 22;
+            this.pict_doctype_reason.TabStop = false;
+            // 
+            // pict_doc_Series_reason
+            // 
+            this.pict_doc_Series_reason.Location = new System.Drawing.Point(373, 79);
+            this.pict_doc_Series_reason.Name = "pict_doc_Series_reason";
+            this.pict_doc_Series_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_Series_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_Series_reason.TabIndex = 22;
+            this.pict_doc_Series_reason.TabStop = false;
+            // 
+            // pict_BirthDate_reason
+            // 
+            this.pict_BirthDate_reason.Location = new System.Drawing.Point(722, 23);
+            this.pict_BirthDate_reason.Name = "pict_BirthDate_reason";
+            this.pict_BirthDate_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_BirthDate_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_BirthDate_reason.TabIndex = 22;
+            this.pict_BirthDate_reason.TabStop = false;
+            // 
+            // pict_doc_IssueDate_reason
+            // 
+            this.pict_doc_IssueDate_reason.Location = new System.Drawing.Point(722, 51);
+            this.pict_doc_IssueDate_reason.Name = "pict_doc_IssueDate_reason";
+            this.pict_doc_IssueDate_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_IssueDate_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_IssueDate_reason.TabIndex = 22;
+            this.pict_doc_IssueDate_reason.TabStop = false;
+            // 
+            // pict_doc_Number_reason
+            // 
+            this.pict_doc_Number_reason.Location = new System.Drawing.Point(722, 79);
+            this.pict_doc_Number_reason.Name = "pict_doc_Number_reason";
+            this.pict_doc_Number_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_Number_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_Number_reason.TabIndex = 22;
+            this.pict_doc_Number_reason.TabStop = false;
+            // 
+            // pict_doc_Issuer_reason
+            // 
+            this.pict_doc_Issuer_reason.Location = new System.Drawing.Point(722, 107);
+            this.pict_doc_Issuer_reason.Name = "pict_doc_Issuer_reason";
+            this.pict_doc_Issuer_reason.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_Issuer_reason.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_Issuer_reason.TabIndex = 22;
+            this.pict_doc_Issuer_reason.TabStop = false;
             // 
             // groupBox3
             // 
@@ -461,14 +617,14 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.Controls.Add(this.decision_date, 5, 0);
-            this.tableLayoutPanel4.Controls.Add(this.dateStart, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.dateFinish, 5, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label24, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.amount, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label26, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label27, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label28, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label27, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.dateStart, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label26, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.decision_date, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.numericUpDown1, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -478,26 +634,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(780, 55);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // decision_date
-            // 
-            this.decision_date.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.decision_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.decision_date.Location = new System.Drawing.Point(648, 3);
-            this.decision_date.Name = "decision_date";
-            this.decision_date.Size = new System.Drawing.Size(102, 20);
-            this.decision_date.TabIndex = 23;
-            this.decision_date.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
-            // dateStart
-            // 
-            this.dateStart.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateStart.Location = new System.Drawing.Point(261, 31);
-            this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(100, 20);
-            this.dateStart.TabIndex = 24;
-            this.dateStart.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
             // dateFinish
             // 
             this.dateFinish.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -505,51 +641,8 @@
             this.dateFinish.Location = new System.Drawing.Point(648, 31);
             this.dateFinish.Name = "dateFinish";
             this.dateFinish.Size = new System.Drawing.Size(102, 20);
-            this.dateFinish.TabIndex = 25;
+            this.dateFinish.TabIndex = 26;
             this.dateFinish.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 7);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(89, 13);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "Сумма выплаты";
-            // 
-            // amount
-            // 
-            this.amount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.amount.Location = new System.Drawing.Point(132, 3);
-            this.amount.Mask = "00000.00";
-            this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(65, 20);
-            this.amount.TabIndex = 22;
-            this.amount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.amount.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.amount_MaskInputRejected);
-            // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label26.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label26, 2);
-            this.label26.Location = new System.Drawing.Point(390, 7);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(201, 13);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "Дата принятия решения о назначении";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label27.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label27, 2);
-            this.label27.Location = new System.Drawing.Point(3, 34);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(169, 13);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Дата начала действия выплаты";
             // 
             // label28
             // 
@@ -561,6 +654,69 @@
             this.label28.Size = new System.Drawing.Size(187, 13);
             this.label28.TabIndex = 9;
             this.label28.Text = "Дата окончания действия выплаты";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label27.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label27, 2);
+            this.label27.Location = new System.Drawing.Point(390, 7);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(169, 13);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "Дата начала действия выплаты";
+            // 
+            // dateStart
+            // 
+            this.dateStart.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateStart.Location = new System.Drawing.Point(648, 3);
+            this.dateStart.Name = "dateStart";
+            this.dateStart.Size = new System.Drawing.Size(100, 20);
+            this.dateStart.TabIndex = 24;
+            this.dateStart.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label26.AutoSize = true;
+            this.tableLayoutPanel4.SetColumnSpan(this.label26, 2);
+            this.label26.Location = new System.Drawing.Point(3, 7);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(201, 13);
+            this.label26.TabIndex = 7;
+            this.label26.Text = "Дата принятия решения о назначении";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(3, 34);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(89, 13);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Сумма выплаты";
+            // 
+            // decision_date
+            // 
+            this.decision_date.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.decision_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.decision_date.Location = new System.Drawing.Point(261, 3);
+            this.decision_date.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.decision_date.Name = "decision_date";
+            this.decision_date.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.decision_date.Size = new System.Drawing.Size(102, 20);
+            this.decision_date.TabIndex = 23;
+            this.decision_date.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.DecimalPlaces = 2;
+            this.numericUpDown1.Location = new System.Drawing.Point(132, 30);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(72, 20);
+            this.numericUpDown1.TabIndex = 25;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox1
             // 
@@ -588,7 +744,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel2.Controls.Add(this.SNILS_recip, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.Name_recip, 2, 2);
@@ -612,17 +768,17 @@
             this.tableLayoutPanel2.Controls.Add(this.label9, 5, 3);
             this.tableLayoutPanel2.Controls.Add(this.label7, 5, 2);
             this.tableLayoutPanel2.Controls.Add(this.label5, 5, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictFamRecip, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictNameRecip, 4, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictPatronymic_recip, 4, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pictSnilsRecip, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.pictGenderRecip, 7, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictBirthdateRecip, 11, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictDocTypeRecip, 8, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictDocSeriesRecip, 7, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pict_IssueDate_recip, 11, 2);
-            this.tableLayoutPanel2.Controls.Add(this.pictNumberRecip, 11, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pictIssuerRecip, 11, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Fam_Recip, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Name_Recip, 4, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Patronymic_recip, 4, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Snils_Recip, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Gender_Recip, 7, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pict_BirthDate_recip, 11, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Doctype_Recip, 8, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Doc_Series_Recip, 7, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pict_doc_IssueDate_recip, 11, 2);
+            this.tableLayoutPanel2.Controls.Add(this.pict_Doc_Number_Recip, 11, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pict_doc_Issuer_recip, 11, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -641,14 +797,10 @@
             this.SNILS_recip.Location = new System.Drawing.Point(87, 108);
             this.SNILS_recip.Mask = "000-000-000 00";
             this.SNILS_recip.Name = "SNILS_recip";
-            this.SNILS_recip.Size = new System.Drawing.Size(90, 20);
+            this.SNILS_recip.Size = new System.Drawing.Size(76, 20);
             this.SNILS_recip.TabIndex = 3;
-            this.SNILS_recip.Click += new System.EventHandler(this.SNILS_Click);
-            this.SNILS_recip.Enter += new System.EventHandler(this.SNILS_Enter);
-            this.SNILS_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SNILS_KeyDown);
-            this.SNILS_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SNILS_KeyPress);
-            this.SNILS_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SNILS_KeyUp);
-            this.SNILS_recip.Leave += new System.EventHandler(this.SNILS_Leave);
+            this.SNILS_recip.Click += new System.EventHandler(this.SNILS_recip_Click);
+            this.SNILS_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SNILS_recip_KeyUp);
             // 
             // label3
             // 
@@ -666,13 +818,9 @@
             this.tableLayoutPanel2.SetColumnSpan(this.Name_recip, 2);
             this.Name_recip.Location = new System.Drawing.Point(87, 52);
             this.Name_recip.Name = "Name_recip";
-            this.Name_recip.Size = new System.Drawing.Size(118, 20);
+            this.Name_recip.Size = new System.Drawing.Size(101, 20);
             this.Name_recip.TabIndex = 1;
-            this.Name_recip.Enter += new System.EventHandler(this.FIO_Enter);
-            this.Name_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
-            this.Name_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FIO_KeyPress);
-            this.Name_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyUp);
-            this.Name_recip.Leave += new System.EventHandler(this.FIO_Leave);
+            this.Name_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Name_recip_KeyUp);
             // 
             // label1
             // 
@@ -690,13 +838,9 @@
             this.tableLayoutPanel2.SetColumnSpan(this.FamilyName_recip, 2);
             this.FamilyName_recip.Location = new System.Drawing.Point(87, 24);
             this.FamilyName_recip.Name = "FamilyName_recip";
-            this.FamilyName_recip.Size = new System.Drawing.Size(118, 20);
+            this.FamilyName_recip.Size = new System.Drawing.Size(101, 20);
             this.FamilyName_recip.TabIndex = 0;
-            this.FamilyName_recip.Enter += new System.EventHandler(this.FIO_Enter);
-            this.FamilyName_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
-            this.FamilyName_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FIO_KeyPress);
-            this.FamilyName_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyUp);
-            this.FamilyName_recip.Leave += new System.EventHandler(this.FIO_Leave);
+            this.FamilyName_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FamilyName_recip_KeyUp);
             // 
             // Patronymic_recip
             // 
@@ -704,13 +848,9 @@
             this.tableLayoutPanel2.SetColumnSpan(this.Patronymic_recip, 2);
             this.Patronymic_recip.Location = new System.Drawing.Point(87, 80);
             this.Patronymic_recip.Name = "Patronymic_recip";
-            this.Patronymic_recip.Size = new System.Drawing.Size(118, 20);
+            this.Patronymic_recip.Size = new System.Drawing.Size(101, 20);
             this.Patronymic_recip.TabIndex = 2;
-            this.Patronymic_recip.Enter += new System.EventHandler(this.FIO_Enter);
-            this.Patronymic_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyDown);
-            this.Patronymic_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FIO_KeyPress);
-            this.Patronymic_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FIO_KeyUp);
-            this.Patronymic_recip.Leave += new System.EventHandler(this.FIO_Leave);
+            this.Patronymic_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Patronymic_recip_KeyUp);
             // 
             // label4
             // 
@@ -748,12 +888,12 @@
             // 
             this.BirthDate_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.BirthDate_recip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BirthDate_recip.Location = new System.Drawing.Point(634, 24);
+            this.BirthDate_recip.Location = new System.Drawing.Point(617, 24);
             this.BirthDate_recip.Name = "BirthDate_recip";
             this.BirthDate_recip.Size = new System.Drawing.Size(99, 20);
             this.BirthDate_recip.TabIndex = 5;
             this.BirthDate_recip.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.BirthDate_recip.ValueChanged += new System.EventHandler(this.Dates_ValueChanged);
+            this.BirthDate_recip.ValueChanged += new System.EventHandler(this.BirthDate_recip_ValueChanged);
             // 
             // doc_IssueDate_recip
             // 
@@ -761,31 +901,28 @@
             this.doc_IssueDate_recip.CustomFormat = "";
             this.doc_IssueDate_recip.Enabled = false;
             this.doc_IssueDate_recip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.doc_IssueDate_recip.Location = new System.Drawing.Point(634, 52);
+            this.doc_IssueDate_recip.Location = new System.Drawing.Point(617, 52);
             this.doc_IssueDate_recip.Name = "doc_IssueDate_recip";
             this.doc_IssueDate_recip.Size = new System.Drawing.Size(99, 20);
             this.doc_IssueDate_recip.TabIndex = 7;
             this.doc_IssueDate_recip.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.doc_IssueDate_recip.ValueChanged += new System.EventHandler(this.Dates_ValueChanged);
+            this.doc_IssueDate_recip.ValueChanged += new System.EventHandler(this.doc_IssueDate_recip_ValueChanged);
             // 
             // doc_Number_recip
             // 
             this.doc_Number_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.doc_Number_recip.Enabled = false;
-            this.doc_Number_recip.Location = new System.Drawing.Point(634, 80);
+            this.doc_Number_recip.Location = new System.Drawing.Point(617, 80);
             this.doc_Number_recip.Name = "doc_Number_recip";
             this.doc_Number_recip.Size = new System.Drawing.Size(99, 20);
             this.doc_Number_recip.TabIndex = 9;
-            this.doc_Number_recip.Enter += new System.EventHandler(this.doc_Number_recip_Enter);
-            this.doc_Number_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Number_recip_KeyDown);
-            this.doc_Number_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Number_recip_KeyPress);
-            this.doc_Number_recip.Leave += new System.EventHandler(this.doc_Number_recip_Leave);
+            this.doc_Number_recip.TextChanged += new System.EventHandler(this.Doc_Number_recip_TextChanged);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(539, 27);
+            this.label2.Location = new System.Drawing.Point(522, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 13);
             this.label2.TabIndex = 11;
@@ -795,7 +932,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(539, 55);
+            this.label8.Location = new System.Drawing.Point(522, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 17;
@@ -805,7 +942,7 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(539, 83);
+            this.label10.Location = new System.Drawing.Point(522, 83);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 13);
             this.label10.TabIndex = 19;
@@ -818,12 +955,11 @@
             this.Gender_recip.Items.AddRange(new object[] {
             "М",
             "Ж"});
-            this.Gender_recip.Location = new System.Drawing.Point(316, 23);
+            this.Gender_recip.Location = new System.Drawing.Point(299, 23);
             this.Gender_recip.Name = "Gender_recip";
             this.Gender_recip.Size = new System.Drawing.Size(48, 21);
             this.Gender_recip.TabIndex = 4;
-            this.Gender_recip.SelectionChangeCommitted += new System.EventHandler(this.Gender_recip_SelectionChangeCommitted);
-            this.Gender_recip.SelectedValueChanged += new System.EventHandler(this.Gender_recip_SelectedValueChanged);
+            this.Gender_recip.SelectedIndexChanged += new System.EventHandler(this.Gender_recip_SelectedIndexChanged);
             // 
             // doctype_recip
             // 
@@ -834,48 +970,39 @@
             "Нет документа",
             "Паспорт гражданина РФ",
             "Свидетельство о рождении"});
-            this.doctype_recip.Location = new System.Drawing.Point(316, 51);
+            this.doctype_recip.Location = new System.Drawing.Point(299, 51);
             this.doctype_recip.Name = "doctype_recip";
             this.doctype_recip.Size = new System.Drawing.Size(189, 21);
             this.doctype_recip.TabIndex = 6;
-            this.doctype_recip.SelectedIndexChanged += new System.EventHandler(this.doctype_recip_SelectedIndexChanged);
-            this.doctype_recip.SelectedValueChanged += new System.EventHandler(this.doctype_recip_SelectedValueChanged);
+            this.doctype_recip.SelectedIndexChanged += new System.EventHandler(this.Doctype_recip_SelectedIndexChanged);
             // 
             // doc_Series_recip
             // 
             this.doc_Series_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.doc_Series_recip.Enabled = false;
-            this.doc_Series_recip.Location = new System.Drawing.Point(316, 80);
+            this.doc_Series_recip.Location = new System.Drawing.Point(299, 80);
             this.doc_Series_recip.MaxLength = 10;
             this.doc_Series_recip.Name = "doc_Series_recip";
             this.doc_Series_recip.Size = new System.Drawing.Size(66, 20);
             this.doc_Series_recip.TabIndex = 8;
-            this.doc_Series_recip.Enter += new System.EventHandler(this.Doc_Series_recip_Enter);
-            this.doc_Series_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Series_recip_KeyDown);
-            this.doc_Series_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Series_recip_KeyPress);
-            this.doc_Series_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Series_recip_KeyUp);
-            this.doc_Series_recip.Leave += new System.EventHandler(this.doc_Series_recip_Leave);
+            this.doc_Series_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Doc_Series_recip_KeyUp);
             // 
             // doc_Issuer_recip
             // 
             this.doc_Issuer_recip.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel2.SetColumnSpan(this.doc_Issuer_recip, 5);
             this.doc_Issuer_recip.Enabled = false;
-            this.doc_Issuer_recip.Location = new System.Drawing.Point(316, 108);
+            this.doc_Issuer_recip.Location = new System.Drawing.Point(299, 108);
             this.doc_Issuer_recip.Name = "doc_Issuer_recip";
             this.doc_Issuer_recip.Size = new System.Drawing.Size(417, 20);
             this.doc_Issuer_recip.TabIndex = 10;
-            this.doc_Issuer_recip.Enter += new System.EventHandler(this.doc_Issuer_recip_Enter);
-            this.doc_Issuer_recip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.doc_Issuer_recip_KeyDown);
-            this.doc_Issuer_recip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.doc_Issuer_recip_KeyPress);
-            this.doc_Issuer_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.doc_Issuer_recip_KeyUp);
-            this.doc_Issuer_recip.Leave += new System.EventHandler(this.doc_Issuer_recip_Leave);
+            this.doc_Issuer_recip.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Doc_Issuer_recip_KeyUp);
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(237, 112);
+            this.label11.Location = new System.Drawing.Point(220, 112);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 20;
@@ -885,7 +1012,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(237, 83);
+            this.label9.Location = new System.Drawing.Point(220, 83);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 13);
             this.label9.TabIndex = 18;
@@ -895,7 +1022,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(237, 55);
+            this.label7.Location = new System.Drawing.Point(220, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 13);
             this.label7.TabIndex = 0;
@@ -905,101 +1032,110 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(237, 27);
+            this.label5.Location = new System.Drawing.Point(220, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 15;
             this.label5.Text = "Пол";
             // 
-            // pictFamRecip
+            // pict_Fam_Recip
             // 
-            this.pictFamRecip.Location = new System.Drawing.Point(211, 23);
-            this.pictFamRecip.Name = "pictFamRecip";
-            this.pictFamRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictFamRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictFamRecip.TabIndex = 22;
-            this.pictFamRecip.TabStop = false;
+            this.pict_Fam_Recip.Location = new System.Drawing.Point(194, 23);
+            this.pict_Fam_Recip.Name = "pict_Fam_Recip";
+            this.pict_Fam_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Fam_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Fam_Recip.TabIndex = 22;
+            this.pict_Fam_Recip.TabStop = false;
             // 
-            // pictNameRecip
+            // pict_Name_Recip
             // 
-            this.pictNameRecip.Location = new System.Drawing.Point(211, 51);
-            this.pictNameRecip.Name = "pictNameRecip";
-            this.pictNameRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictNameRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictNameRecip.TabIndex = 22;
-            this.pictNameRecip.TabStop = false;
+            this.pict_Name_Recip.Location = new System.Drawing.Point(194, 51);
+            this.pict_Name_Recip.Name = "pict_Name_Recip";
+            this.pict_Name_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Name_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Name_Recip.TabIndex = 22;
+            this.pict_Name_Recip.TabStop = false;
             // 
-            // pictPatronymic_recip
+            // pict_Patronymic_recip
             // 
-            this.pictPatronymic_recip.Location = new System.Drawing.Point(211, 79);
-            this.pictPatronymic_recip.Name = "pictPatronymic_recip";
-            this.pictPatronymic_recip.Size = new System.Drawing.Size(20, 22);
-            this.pictPatronymic_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictPatronymic_recip.TabIndex = 22;
-            this.pictPatronymic_recip.TabStop = false;
+            this.pict_Patronymic_recip.Location = new System.Drawing.Point(194, 79);
+            this.pict_Patronymic_recip.Name = "pict_Patronymic_recip";
+            this.pict_Patronymic_recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Patronymic_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Patronymic_recip.TabIndex = 22;
+            this.pict_Patronymic_recip.TabStop = false;
             // 
-            // pictSnilsRecip
+            // pict_Snils_Recip
             // 
-            this.pictSnilsRecip.Location = new System.Drawing.Point(183, 107);
-            this.pictSnilsRecip.Name = "pictSnilsRecip";
-            this.pictSnilsRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictSnilsRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictSnilsRecip.TabIndex = 22;
-            this.pictSnilsRecip.TabStop = false;
+            this.pict_Snils_Recip.Location = new System.Drawing.Point(169, 107);
+            this.pict_Snils_Recip.Name = "pict_Snils_Recip";
+            this.pict_Snils_Recip.Size = new System.Drawing.Size(19, 22);
+            this.pict_Snils_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Snils_Recip.TabIndex = 22;
+            this.pict_Snils_Recip.TabStop = false;
             // 
-            // pictGenderRecip
+            // pict_Gender_Recip
             // 
-            this.pictGenderRecip.Location = new System.Drawing.Point(390, 23);
-            this.pictGenderRecip.Name = "pictGenderRecip";
-            this.pictGenderRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictGenderRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictGenderRecip.TabIndex = 22;
-            this.pictGenderRecip.TabStop = false;
+            this.pict_Gender_Recip.Location = new System.Drawing.Point(373, 23);
+            this.pict_Gender_Recip.Name = "pict_Gender_Recip";
+            this.pict_Gender_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Gender_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Gender_Recip.TabIndex = 22;
+            this.pict_Gender_Recip.TabStop = false;
             // 
-            // pictBirthdateRecip
+            // pict_BirthDate_recip
             // 
-            this.pictBirthdateRecip.Location = new System.Drawing.Point(739, 23);
-            this.pictBirthdateRecip.Name = "pictBirthdateRecip";
-            this.pictBirthdateRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictBirthdateRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictBirthdateRecip.TabIndex = 22;
-            this.pictBirthdateRecip.TabStop = false;
+            this.pict_BirthDate_recip.Location = new System.Drawing.Point(722, 23);
+            this.pict_BirthDate_recip.Name = "pict_BirthDate_recip";
+            this.pict_BirthDate_recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_BirthDate_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_BirthDate_recip.TabIndex = 22;
+            this.pict_BirthDate_recip.TabStop = false;
             // 
-            // pictDocTypeRecip
+            // pict_Doctype_Recip
             // 
-            this.pictDocTypeRecip.Location = new System.Drawing.Point(511, 51);
-            this.pictDocTypeRecip.Name = "pictDocTypeRecip";
-            this.pictDocTypeRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictDocTypeRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictDocTypeRecip.TabIndex = 22;
-            this.pictDocTypeRecip.TabStop = false;
+            this.pict_Doctype_Recip.Location = new System.Drawing.Point(494, 51);
+            this.pict_Doctype_Recip.Name = "pict_Doctype_Recip";
+            this.pict_Doctype_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Doctype_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Doctype_Recip.TabIndex = 22;
+            this.pict_Doctype_Recip.TabStop = false;
             // 
-            // pictDocSeriesRecip
+            // pict_Doc_Series_Recip
             // 
-            this.pictDocSeriesRecip.Location = new System.Drawing.Point(390, 79);
-            this.pictDocSeriesRecip.Name = "pictDocSeriesRecip";
-            this.pictDocSeriesRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictDocSeriesRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictDocSeriesRecip.TabIndex = 22;
-            this.pictDocSeriesRecip.TabStop = false;
+            this.pict_Doc_Series_Recip.Location = new System.Drawing.Point(373, 79);
+            this.pict_Doc_Series_Recip.Name = "pict_Doc_Series_Recip";
+            this.pict_Doc_Series_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Doc_Series_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Doc_Series_Recip.TabIndex = 22;
+            this.pict_Doc_Series_Recip.TabStop = false;
             // 
-            // pict_IssueDate_recip
+            // pict_doc_IssueDate_recip
             // 
-            this.pict_IssueDate_recip.Location = new System.Drawing.Point(739, 51);
-            this.pict_IssueDate_recip.Name = "pict_IssueDate_recip";
-            this.pict_IssueDate_recip.Size = new System.Drawing.Size(20, 22);
-            this.pict_IssueDate_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pict_IssueDate_recip.TabIndex = 22;
-            this.pict_IssueDate_recip.TabStop = false;
+            this.pict_doc_IssueDate_recip.Location = new System.Drawing.Point(722, 51);
+            this.pict_doc_IssueDate_recip.Name = "pict_doc_IssueDate_recip";
+            this.pict_doc_IssueDate_recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_IssueDate_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_IssueDate_recip.TabIndex = 22;
+            this.pict_doc_IssueDate_recip.TabStop = false;
             // 
-            // pictNumberRecip
+            // pict_Doc_Number_Recip
             // 
-            this.pictNumberRecip.Location = new System.Drawing.Point(739, 79);
-            this.pictNumberRecip.Name = "pictNumberRecip";
-            this.pictNumberRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictNumberRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictNumberRecip.TabIndex = 22;
-            this.pictNumberRecip.TabStop = false;
+            this.pict_Doc_Number_Recip.Location = new System.Drawing.Point(722, 79);
+            this.pict_Doc_Number_Recip.Name = "pict_Doc_Number_Recip";
+            this.pict_Doc_Number_Recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_Doc_Number_Recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_Doc_Number_Recip.TabIndex = 22;
+            this.pict_Doc_Number_Recip.TabStop = false;
+            // 
+            // pict_doc_Issuer_recip
+            // 
+            this.pict_doc_Issuer_recip.Location = new System.Drawing.Point(722, 107);
+            this.pict_doc_Issuer_recip.Name = "pict_doc_Issuer_recip";
+            this.pict_doc_Issuer_recip.Size = new System.Drawing.Size(20, 22);
+            this.pict_doc_Issuer_recip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pict_doc_Issuer_recip.TabIndex = 22;
+            this.pict_doc_Issuer_recip.TabStop = false;
             // 
             // groupBox4
             // 
@@ -1024,7 +1160,7 @@
             this.radioButton2.TabIndex = 2;
             this.radioButton2.Text = "Родительская плата";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -1037,7 +1173,7 @@
             this.radioButton1.TabIndex = 1;
             this.radioButton1.Text = "Школьное питание";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // label29
             // 
@@ -1075,10 +1211,10 @@
             this.button2.Location = new System.Drawing.Point(450, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 25);
-            this.button2.TabIndex = 27;
+            this.button2.TabIndex = 28;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
@@ -1087,24 +1223,15 @@
             this.button1.Location = new System.Drawing.Point(254, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 25);
-            this.button1.TabIndex = 26;
+            this.button1.TabIndex = 27;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictIssuerRecip
-            // 
-            this.pictIssuerRecip.Location = new System.Drawing.Point(739, 107);
-            this.pictIssuerRecip.Name = "pictIssuerRecip";
-            this.pictIssuerRecip.Size = new System.Drawing.Size(20, 22);
-            this.pictIssuerRecip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictIssuerRecip.TabIndex = 22;
-            this.pictIssuerRecip.TabStop = false;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Editform
             // 
@@ -1124,26 +1251,38 @@
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_FamilyName_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Name_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Patronymic_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_SNILS_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Gender_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doctype_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Series_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_BirthDate_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_IssueDate_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Number_reason)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Issuer_reason)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictFamRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictNameRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictPatronymic_recip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSnilsRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictGenderRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBirthdateRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocTypeRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictDocSeriesRecip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pict_IssueDate_recip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictNumberRecip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Fam_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Name_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Patronymic_recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Snils_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Gender_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_BirthDate_recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doctype_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doc_Series_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_IssueDate_recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_Doc_Number_Recip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pict_doc_Issuer_recip)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictIssuerRecip)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1185,7 +1324,6 @@
         private System.Windows.Forms.DateTimePicker dateStart;
         private System.Windows.Forms.DateTimePicker dateFinish;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.MaskedTextBox amount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
@@ -1219,17 +1357,29 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictFamRecip;
+        private System.Windows.Forms.PictureBox pict_Fam_Recip;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pictNameRecip;
-        private System.Windows.Forms.PictureBox pictPatronymic_recip;
-        private System.Windows.Forms.PictureBox pictSnilsRecip;
-        private System.Windows.Forms.PictureBox pictGenderRecip;
-        private System.Windows.Forms.PictureBox pictDocTypeRecip;
-        private System.Windows.Forms.PictureBox pictBirthdateRecip;
-        private System.Windows.Forms.PictureBox pictDocSeriesRecip;
-        private System.Windows.Forms.PictureBox pict_IssueDate_recip;
-        private System.Windows.Forms.PictureBox pictNumberRecip;
-        private System.Windows.Forms.PictureBox pictIssuerRecip;
+        private System.Windows.Forms.PictureBox pict_Name_Recip;
+        private System.Windows.Forms.PictureBox pict_Patronymic_recip;
+        private System.Windows.Forms.PictureBox pict_Snils_Recip;
+        private System.Windows.Forms.PictureBox pict_Gender_Recip;
+        private System.Windows.Forms.PictureBox pict_Doctype_Recip;
+        private System.Windows.Forms.PictureBox pict_BirthDate_recip;
+        private System.Windows.Forms.PictureBox pict_Doc_Series_Recip;
+        private System.Windows.Forms.PictureBox pict_doc_IssueDate_recip;
+        private System.Windows.Forms.PictureBox pict_Doc_Number_Recip;
+        private System.Windows.Forms.PictureBox pict_doc_Issuer_recip;
+        private System.Windows.Forms.PictureBox pict_FamilyName_reason;
+        private System.Windows.Forms.PictureBox pict_Name_reason;
+        private System.Windows.Forms.PictureBox pict_Patronymic_reason;
+        private System.Windows.Forms.PictureBox pict_SNILS_reason;
+        private System.Windows.Forms.PictureBox pict_Gender_reason;
+        private System.Windows.Forms.PictureBox pict_doctype_reason;
+        private System.Windows.Forms.PictureBox pict_doc_Series_reason;
+        private System.Windows.Forms.PictureBox pict_BirthDate_reason;
+        private System.Windows.Forms.PictureBox pict_doc_IssueDate_reason;
+        private System.Windows.Forms.PictureBox pict_doc_Number_reason;
+        private System.Windows.Forms.PictureBox pict_doc_Issuer_reason;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
