@@ -38,18 +38,7 @@ namespace EgissoApp
 
             dataGridView1.DataSource = ds.Tables[0].DefaultView;//Заполняем созданный на форме dataGridView1
 
-            conn.Close();//Закрываем соединение
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            Editform f = new Editform();
-            f.Show();
-        }
-
-        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
+            conn.Close();// Закрываем соединение
         }
     }
 }
