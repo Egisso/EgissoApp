@@ -369,6 +369,5 @@ namespace EgissoApp
             else SetPict.ErrorDocIssuer(pict_doc_Issuer_reason);
         }
 
-       
     }
 }
