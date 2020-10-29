@@ -85,7 +85,7 @@ namespace EgissoApp
                     @"^[а-яА-ЯёЁ][а-яА-ЯёЁ\-\s',.0-9№()\\/]{0,99}$").Success;
             }
         }
-
+        
         public class SetPict
         {
             public static void HidePictAndToolTip(PictureBox pictureBox)
@@ -95,16 +95,20 @@ namespace EgissoApp
                 toolTip.SetToolTip(pictureBox, "");
                 toolTip.Active = false;
             }
+
+            static ToolTip toolTip = new ToolTip();
+
             static void ShowPictAndToolTip (PictureBox pictureBox, string messageToolTip)
             {
-                ToolTip toolTip = new ToolTip();
+                //ToolTip toolTip = new ToolTip();
                 pictureBox.Image = Properties.Resources.question;
                 toolTip.ToolTipIcon = ToolTipIcon.Warning;
                 toolTip.SetToolTip(pictureBox, messageToolTip);
             }
+
             public static void Checked (PictureBox pictureBox)
             {
-                ToolTip toolTip = new ToolTip();
+                //ToolTip toolTip = new ToolTip();
                 pictureBox.Image = Properties.Resources.chek;
                 toolTip.ToolTipIcon = ToolTipIcon.Info;
                 toolTip.SetToolTip(pictureBox, "Поле проверено!");
