@@ -8,17 +8,9 @@ namespace EgissoApp
 {
     public partial class Editform : Form
     {
-        public Dictionary<TextBox, PictureBox> selectPictBox;
-        public Dictionary<MaskedTextBox, PictureBox> selectPictBoxSnils;
-        public Dictionary<DateTimePicker, PictureBox> selectPictBoxDate;
         public Editform()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -116,6 +108,7 @@ namespace EgissoApp
                 pictureBox.Image = Properties.Resources.chek;
                 toolTip.ToolTipIcon = ToolTipIcon.Info;
                 toolTip.SetToolTip(pictureBox, "Поле проверено!");
+                pictureBox.Tag = 1;
             }
             public static void ErrorFamName(PictureBox pictureBox)
             {
@@ -123,6 +116,7 @@ namespace EgissoApp
                     "\n и может содержать только \n" +
                     "русские буквы, пробелы, точки,\n" +
                     "тире и апострофы.");
+                pictureBox.Tag = 0;
             }
             public static void ErrorPatronymic(PictureBox pictureBox)
             {
@@ -130,16 +124,26 @@ namespace EgissoApp
                     "\n или должно содержать только \n" +
                     "русские буквы, пробелы, точки,\n" +
                     "тире и апострофы.");
+                pictureBox.Tag = 0;
             }
             public static void ErrorSnils (PictureBox pictureBox)
             {
                 ShowPictAndToolTip(pictureBox, "Поле дожно содежать 11 цифр" +
                 "\n или контрольное число СНИЛС не верно!");
+                pictureBox.Tag = 0;
             }
+
+            public static void ErrorGenderAndDoctype(PictureBox pictureBox)
+            {
+                ShowPictAndToolTip(pictureBox, "Выберите значение из списка!");
+                pictureBox.Tag = 0;
+            }
+
             public static void ErrorPassSeries (PictureBox pictureBox)
             {
                 ShowPictAndToolTip(pictureBox, "Поле должно содержать только\n" +
                             "четыре цифры.");
+                pictureBox.Tag = 0;
             }
             public static void ErrorBirthSeries(PictureBox pictureBox)
             {
@@ -148,11 +152,13 @@ namespace EgissoApp
                             "тире\n" +
                             "и две заглавные русские буквы!\n" +
                             "(например IV-РУ)");
+                pictureBox.Tag = 0;
             }
             public static void ErrorDocNumber(PictureBox pictureBox)
             {
                 ShowPictAndToolTip(pictureBox, "Поле должно содержать только\n" +
                             "шесть цифр.");
+                pictureBox.Tag = 0;
             }
             public static void ErrorDocIssuer(PictureBox pictureBox)
             {
@@ -160,10 +166,18 @@ namespace EgissoApp
                     "только русский текст, допускаются также\n" +
                     "пробелы, цифры, точки, запятые, тире,\n" +
                     "круглые скобки, знак №.");
+                pictureBox.Tag = 0;
             }
             public static void ErrorDate(PictureBox pictureBox)
             {
                 ShowPictAndToolTip(pictureBox, "Проверьте дату!");
+                pictureBox.Tag = 0;
+            }
+
+            public static void ErrorAmount(PictureBox pictureBox)
+            {
+                ShowPictAndToolTip(pictureBox, "Проверьте сумму!");
+                pictureBox.Tag = 0;
             }
 
         }
@@ -190,6 +204,7 @@ namespace EgissoApp
         private void SNILS_recip_Click(object sender, EventArgs e)
         {
             SNILS_recip.SelectionStart = 0;
+            if (Patronymic_recip.Text == "") SetPict.Checked(pict_Patronymic_recip);
         }
 
         private void SNILS_recip_KeyUp(object sender, KeyEventArgs e)
@@ -292,6 +307,7 @@ namespace EgissoApp
         private void SNILS_reason_Click(object sender, EventArgs e)
         {
             SNILS_reason.SelectionStart = 0;
+            if (Patronymic_reason.Text == "") SetPict.Checked(pict_Patronymic_reason);
         }
 
         private void SNILS_reason_KeyUp(object sender, KeyEventArgs e)
@@ -369,6 +385,96 @@ namespace EgissoApp
             else SetPict.ErrorDocIssuer(pict_doc_Issuer_reason);
         }
 
-       
+        private void decision_date_ValueChanged(object sender, EventArgs e)
+        {
+            if (decision_date.Value > BirthDate_recip.Value)
+                SetPict.Checked(pict_decision_date);
+            else SetPict.ErrorDate(pict_decision_date);
+        }
+
+        private void dateStart_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateStart.Value > BirthDate_recip.Value)
+                SetPict.Checked(pict_dateStart);
+            else SetPict.ErrorDate(pict_dateStart);
+        }
+
+        private void dateFinish_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateFinish.Value > dateStart.Value)
+                SetPict.Checked(pict_dateFinish);
+            else SetPict.ErrorDate(pict_dateFinish);
+        }
+
+        private void amount_ValueChanged(object sender, EventArgs e)
+        {
+            if (amount.Value >= 0) SetPict.Checked(pict_amount);
+            else SetPict.ErrorAmount(pict_amount);
+        }
+
+
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            bool error = false;
+
+            if(radioButton1.Checked == true || radioButton2.Checked == true)
+            {
+                if (pict_Fam_Recip.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Fam_Recip); error = true; }
+                if (pict_Name_Recip.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Name_Recip); error = true; }
+                if (pict_Patronymic_recip.Tag.ToString() == "0") { SetPict.ErrorPatronymic(pict_Patronymic_recip); error = true; }
+                if (pict_Snils_Recip.Tag.ToString() == "0") { SetPict.ErrorSnils(pict_Snils_Recip); error = true; }
+                if (pict_Gender_Recip.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Gender_Recip); error = true; }
+                if (pict_BirthDate_recip.Tag.ToString() == "0") { SetPict.ErrorDate(pict_BirthDate_recip); error = true; }
+                if (pict_Doctype_Recip.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Doctype_Recip); error = true; }
+                if(doctype_recip.SelectedIndex != 0)
+                {
+                    if (pict_doc_IssueDate_recip.Tag.ToString() == "0") { SetPict.ErrorDate(pict_doc_IssueDate_recip); error = true; }
+                    if (pict_Doc_Series_Recip.Tag.ToString() == "0") 
+                    { 
+                        if(doctype_recip.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_Doc_Series_Recip); error = true;
+                        if (doctype_recip.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_Doc_Series_Recip); error = true;
+                    }
+                    if (pict_Doc_Number_Recip.Tag.ToString() == "0") { SetPict.ErrorDocNumber(pict_Doc_Number_Recip); error = true; }
+                    if (pict_doc_Issuer_recip.Tag.ToString() == "0") { SetPict.ErrorDocIssuer(pict_doc_Issuer_recip); error = true; }
+                }
+                if (pict_decision_date.Tag.ToString() == "0") { SetPict.ErrorDate(pict_decision_date); error = true; }
+                if (pict_dateStart.Tag.ToString() == "0") { SetPict.ErrorDate(pict_dateStart); error = true; }
+                if (pict_dateFinish.Tag.ToString() == "0") { SetPict.ErrorDate(pict_dateFinish); error = true; }
+                if (pict_amount.Tag.ToString() == "0") { SetPict.ErrorAmount(pict_amount); error = true; }
+
+                if (radioButton2.Checked == true)
+                {
+                    if (pict_FamilyName_reason.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_FamilyName_reason); error = true; }
+                    if (pict_Name_reason.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Name_reason); error = true; }
+                    if (pict_Patronymic_reason.Tag.ToString() == "0") { SetPict.ErrorPatronymic(pict_Patronymic_reason); error = true; }
+                    if (pict_SNILS_reason.Tag.ToString() == "0") { SetPict.ErrorSnils(pict_SNILS_reason); error = true; }
+                    if (pict_Gender_reason.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Gender_reason); error = true; }
+                    if (pict_BirthDate_reason.Tag.ToString() == "0") { SetPict.ErrorDate(pict_BirthDate_reason); error = true; }
+                    if (pict_doctype_reason.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_doctype_reason); error = true; }
+                    if (doctype_reason.SelectedIndex != 0)
+                    {
+                        if (pict_doc_IssueDate_reason.Tag.ToString() == "0") { SetPict.ErrorDate(pict_doc_IssueDate_reason); error = true; }
+                        if (pict_doc_Series_reason.Tag.ToString() == "0")
+                        {
+                            if (doctype_reason.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_doc_Series_reason); error = true;
+                            if (doctype_reason.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_doc_Series_reason); error = true;
+                        }
+                        if (pict_doc_Number_reason.Tag.ToString() == "0") { SetPict.ErrorDocNumber(pict_doc_Number_reason); error = true; }
+                        if (pict_doc_Issuer_reason.Tag.ToString() == "0") { SetPict.ErrorDocIssuer(pict_doc_Issuer_reason); error = true; }
+                    }
+                    if (pict_decision_date.Tag.ToString() == "0") { SetPict.ErrorDate(pict_decision_date); error = true; }
+                    if (pict_dateStart.Tag.ToString() == "0") { SetPict.ErrorDate(pict_dateStart); error = true; }
+                    if (pict_dateFinish.Tag.ToString() == "0") { SetPict.ErrorDate(pict_dateFinish); error = true; }
+                    if (pict_amount.Tag.ToString() == "0") { SetPict.ErrorAmount(pict_amount); error = true; }
+
+                }
+
+                if (error) MessageBox.Show("Есть ошибки! Исправьте!");
+                else MessageBox.Show("Ошибок нет!");
+            }
+
+        }
+
     }
 }
