@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -100,7 +101,6 @@ namespace EgissoApp
 
             static void ShowPictAndToolTip (PictureBox pictureBox, string messageToolTip)
             {
-                //ToolTip toolTip = new ToolTip();
                 pictureBox.Image = Properties.Resources.question;
                 toolTip.ToolTipIcon = ToolTipIcon.Warning;
                 toolTip.SetToolTip(pictureBox, messageToolTip);
@@ -108,7 +108,6 @@ namespace EgissoApp
 
             public static void Checked (PictureBox pictureBox)
             {
-                //ToolTip toolTip = new ToolTip();
                 pictureBox.Image = Properties.Resources.chek;
                 toolTip.ToolTipIcon = ToolTipIcon.Info;
                 toolTip.SetToolTip(pictureBox, "Поле проверено!");
@@ -424,6 +423,14 @@ namespace EgissoApp
 
             if(radioButton1.Checked == true || radioButton2.Checked == true)
             {
+                string LMSZID = "d8a8d780-d3b4-42f3-91f6-9fe7374ce1f9";
+                string categoryID = "2e89c6ec-0297-4620-9d56-cca14bbc799b";
+                string numberDocTypeRecip = doctype_recip.SelectedIndex == 0 ? "" :
+                    doctype_recip.SelectedIndex == 1 ? "03" : "05";
+                string numberDocTypeReason = "";
+                string var_doc_IssueDate_recip = "";
+                string var_BirthDate_reason = "";
+                string var_doc_IssueDate_reason = "";
                 if (pict_Fam_Recip.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Fam_Recip); error = true; }
                 if (pict_Name_Recip.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Name_Recip); error = true; }
                 if (pict_Patronymic_recip.Tag.ToString() == "0") { SetPict.ErrorPatronymic(pict_Patronymic_recip); error = true; }
@@ -431,13 +438,15 @@ namespace EgissoApp
                 if (pict_Gender_Recip.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Gender_Recip); error = true; }
                 if (pict_BirthDate_recip.Tag.ToString() == "0") { SetPict.ErrorDate(pict_BirthDate_recip); error = true; }
                 if (pict_Doctype_Recip.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Doctype_Recip); error = true; }
-                if(doctype_recip.SelectedIndex != 0)
+                if(doctype_recip.SelectedIndex != 0 && pict_Doctype_Recip.Tag.ToString() != "0")
                 {
+                    var_doc_IssueDate_recip = doc_IssueDate_recip.Value.ToString().Substring(0, 10);
                     if (pict_doc_IssueDate_recip.Tag.ToString() == "0") { SetPict.ErrorDate(pict_doc_IssueDate_recip); error = true; }
                     if (pict_Doc_Series_Recip.Tag.ToString() == "0") 
                     { 
-                        if(doctype_recip.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_Doc_Series_Recip); error = true;
-                        if (doctype_recip.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_Doc_Series_Recip); error = true;
+                        if (doctype_recip.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_Doc_Series_Recip);
+                        if (doctype_recip.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_Doc_Series_Recip);
+                        error = true;
                     }
                     if (pict_Doc_Number_Recip.Tag.ToString() == "0") { SetPict.ErrorDocNumber(pict_Doc_Number_Recip); error = true; }
                     if (pict_doc_Issuer_recip.Tag.ToString() == "0") { SetPict.ErrorDocIssuer(pict_doc_Issuer_recip); error = true; }
@@ -449,6 +458,11 @@ namespace EgissoApp
 
                 if (radioButton2.Checked == true)
                 {
+                    LMSZID = "4115e27f-bbd7-403e-bdf9-1f4027c9b8d0";
+                    categoryID = "e655dfc6-7492-46ed-ada3-fe4809e4da88";
+                    numberDocTypeReason = doctype_reason.SelectedIndex == 0 ? "" :
+                            doctype_reason.SelectedIndex == 1 ? "03" : "05";
+                    var_BirthDate_reason = BirthDate_reason.Value.ToString().Substring(0, 10);
                     if (pict_FamilyName_reason.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_FamilyName_reason); error = true; }
                     if (pict_Name_reason.Tag.ToString() == "0") { SetPict.ErrorFamName(pict_Name_reason); error = true; }
                     if (pict_Patronymic_reason.Tag.ToString() == "0") { SetPict.ErrorPatronymic(pict_Patronymic_reason); error = true; }
@@ -456,13 +470,15 @@ namespace EgissoApp
                     if (pict_Gender_reason.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_Gender_reason); error = true; }
                     if (pict_BirthDate_reason.Tag.ToString() == "0") { SetPict.ErrorDate(pict_BirthDate_reason); error = true; }
                     if (pict_doctype_reason.Tag.ToString() == "0") { SetPict.ErrorGenderAndDoctype(pict_doctype_reason); error = true; }
-                    if (doctype_reason.SelectedIndex != 0)
+                    if (doctype_reason.SelectedIndex != 0 && pict_doctype_reason.Tag.ToString() != "0")
                     {
+                        var_doc_IssueDate_reason = doc_IssueDate_reason.Value.ToString().Substring(0, 10);
                         if (pict_doc_IssueDate_reason.Tag.ToString() == "0") { SetPict.ErrorDate(pict_doc_IssueDate_reason); error = true; }
                         if (pict_doc_Series_reason.Tag.ToString() == "0")
                         {
-                            if (doctype_reason.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_doc_Series_reason); error = true;
-                            if (doctype_reason.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_doc_Series_reason); error = true;
+                            if (doctype_reason.SelectedIndex == 1) SetPict.ErrorPassSeries(pict_doc_Series_reason);
+                            if (doctype_reason.SelectedIndex == 2) SetPict.ErrorBirthSeries(pict_doc_Series_reason);
+                            error = true;
                         }
                         if (pict_doc_Number_reason.Tag.ToString() == "0") { SetPict.ErrorDocNumber(pict_doc_Number_reason); error = true; }
                         if (pict_doc_Issuer_reason.Tag.ToString() == "0") { SetPict.ErrorDocIssuer(pict_doc_Issuer_reason); error = true; }
@@ -475,7 +491,105 @@ namespace EgissoApp
                 }
 
                 if (error) MessageBox.Show("Есть ошибки! Исправьте!");
-                else MessageBox.Show("Ошибок нет!");
+                else
+                {
+
+                    //MessageBox.Show("Ошибок нет!");
+                    try
+                    {
+                        SQLiteConnection connection =
+                            new SQLiteConnection("Data Source=egissodb.db;Version=3;New=True;Compress=True;");
+                        connection.Open();
+                        //SQLiteCommand command = new SQLiteCommand("INSERT INTO 'table' ('RecType') VALUES ('Reason');", connection);
+                        SQLiteCommand command = new SQLiteCommand("INSERT INTO 'table' (" +
+                        "'RecType'," +
+                        "'LMSZID'," +
+                        "'categoryID'," +
+                        "'ONMSZCode'," +
+                        "'SNILS_recip'," +
+                        "'FamilyName_recip'," +
+                        "'Name_recip'," +
+                        "'Patronymic_recip'," +
+                        "'Gender_recip'," +
+                        "'BirthDate_recip'," +
+                        "'doctype_recip'," +
+                        "'doc_Series_recip'," +
+                        "'doc_Number_recip'," +
+                        "'doc_IssueDate_recip'," +
+                        "'doc_Issuer_recip'," +
+                        "'SNILS_reason'," +
+                        "'FamilyName_reason'," +
+                        "'Name_reason'," +
+                        "'Patronymic_reason'," +
+                        "'Gender_reason'," +
+                        "'BirthDate_reason'," +
+                        "'doctype_reason'," +
+                        "'doc_Series_reason'," +
+                        "'doc_Number_reason'," +
+                        "'doc_IssueDate_reason'," +
+                        "'doc_Issuer_reason'," +
+                        "'decision_date'," +
+                        "'dateStart'," +
+                        "'dateFinish'," +
+                        "'usingSign'," +
+                        "'criteria'," +
+                        "'FormCode'," +
+                        "'amount'," +
+                        "'measuryCode'," +
+                        "'monetization'," +
+                        "'content'," +
+                        "'comment'," +
+                        "'equivalentAmount') VALUES (" +
+                        "'Fact'," +
+                        "'" + LMSZID + "'," +
+                        "'" + categoryID + "'," +
+                        "'0963.000001'," +
+                        "'" + SNILS_recip.Text.Replace("-", "").Replace(" ", "") + "'," +
+                        "'" + FamilyName_recip.Text + "'," +
+                        "'" + Name_recip.Text + "'," +
+                        "'" + Patronymic_recip.Text + "'," +
+                        "'" + Gender_recip.Text + "'," +
+                        "'" + BirthDate_recip.Value.ToString().Substring(0, 10) + "'," +
+                        "'" + numberDocTypeRecip + "'," +
+                        "'" + doc_Series_recip.Text + "'," +
+                        "'" + doc_Number_recip.Text + "'," +
+                        "'" + var_doc_IssueDate_recip + "'," +
+                        "'" + doc_Issuer_recip.Text + "'," +
+                        "'" + SNILS_reason.Text.Replace("-", "").Replace(" ", "") + "'," +
+                        "'" + FamilyName_reason.Text + "'," +
+                        "'" + Name_reason.Text + "'," +
+                        "'" + Patronymic_reason.Text + "'," +
+                        "'" + Gender_reason.Text + "'," +
+                        "'" + var_BirthDate_reason + "'," +
+                        "'" + numberDocTypeReason + "'," +
+                        "'" + doc_Series_reason.Text + "'," +
+                        "'" + doc_Number_reason.Text + "'," +
+                        "'" + var_doc_IssueDate_reason + "'," +
+                        "'" + doc_Issuer_reason.Text + "'," +
+                        "'" + decision_date.Value.ToString().Substring(0, 10) + "'," +
+                        "'" + dateStart.Value.ToString().Substring(0, 10) + "'," +
+                        "'" + dateFinish.Value.ToString().Substring(0, 10) + "'," +
+                        "'Нет'," +
+                        "''," +
+                        "'01'," +
+                        "'" + amount.Value.ToString().Replace(".", ",") + "'," +
+                        "'01'," +
+                        "'Нет'," +
+                        "''," +
+                        "''," +
+                        "'');", connection);
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                        
+                        Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Не удалось сохранить данные в базу!");
+                    }
+                }
+
+
             }
 
         }

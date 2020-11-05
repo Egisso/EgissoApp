@@ -22,6 +22,11 @@ namespace EgissoApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            UpdateDGV();
+        }
+
+        private void UpdateDGV ()
+        {
             DataSet ds = new DataSet(); //Создаем объект класса DataSet
 
             string sql = "Select * From [table]"; //Sql запрос (достать все из таблицы table)
@@ -41,10 +46,15 @@ namespace EgissoApp
             conn.Close();//Закрываем соединение
         }
 
+
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             Editform f = new Editform();
             f.Show();
+            f.FormClosed += (obj, arg) =>
+            {
+                UpdateDGV();
+            };
         }
 
         private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
