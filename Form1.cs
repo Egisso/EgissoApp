@@ -61,5 +61,57 @@ namespace EgissoApp
         {
             
         }
+
+        private void экспортВXMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            int RowCount = dataGridView1.RowCount;
+            int ColumnCount = dataGridView1.ColumnCount;
+
+            // get column headers
+            for (int currentCol = 1; currentCol < ColumnCount; currentCol++)
+            {
+                sb.Append(dataGridView1.Columns[currentCol].Name);
+                if (currentCol < ColumnCount - 1)
+                {
+                    sb.Append(";");
+                }
+                else
+                {
+                    sb.AppendLine();
+                }
+            }
+
+            // get the rows data
+            for (int currentRow = 0; currentRow < RowCount; currentRow++)
+            {
+                if (!dataGridView1.Rows[currentRow].IsNewRow)
+                {
+                    for (int currentCol = 1; currentCol < ColumnCount; currentCol++)
+                    {
+                        if (dataGridView1.Rows[currentRow].Cells[currentCol].Value != null)
+                        {
+                            sb.Append(dataGridView1.Rows[currentRow].Cells[currentCol].Value.ToString());
+                        }
+                        if (currentCol < ColumnCount - 1)
+                        {
+                            sb.Append(";");
+                        }
+                        else
+                        {
+                            sb.AppendLine();
+                        }
+                    }
+                }
+            }
+            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            string filename = saveFileDialog1.FileName;
+            // сохраняем текст в файл
+            System.IO.File.WriteAllText(filename, sb.ToString(), Encoding.GetEncoding(1251));
+            MessageBox.Show("Файл сохранен");
+            //System.IO.File.WriteAllText(@"C:\Users\Администратор\Desktop\DGV_CSV_EXPORT.csv", sb.ToString(), Encoding.GetEncoding(1251));
+        }
     }
 }

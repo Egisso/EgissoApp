@@ -1,4 +1,6 @@
-﻿namespace EgissoApp
+﻿using System;
+
+namespace EgissoApp
 {
     partial class Form1
     {
@@ -49,6 +51,7 @@
             this.изменитьОтчетныйПериодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.упрощенныйРедакторСуммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -157,19 +160,20 @@
             // импортИзCSVToolStripMenuItem
             // 
             this.импортИзCSVToolStripMenuItem.Name = "импортИзCSVToolStripMenuItem";
-            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.импортИзCSVToolStripMenuItem.Text = "Импорт из CSV";
             // 
             // экспортВXMLToolStripMenuItem
             // 
             this.экспортВXMLToolStripMenuItem.Name = "экспортВXMLToolStripMenuItem";
-            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.экспортВXMLToolStripMenuItem.Text = "Экспорт в CSV";
+            this.экспортВXMLToolStripMenuItem.Click += new System.EventHandler(this.экспортВXMLToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // массовыеОперацииToolStripMenuItem
@@ -199,6 +203,13 @@
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
             this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "csv";
+            this.saveFileDialog1.Filter = "CSV файлы|*.csv";
+            this.saveFileDialog1.FileName = "Export_" + 
+                DateTime.Now.ToString().Replace(".", "_").Replace(":", "_").Replace(" ", "_");
             // 
             // Form1
             // 
@@ -248,6 +259,7 @@
         private System.Windows.Forms.ToolStripMenuItem упрощенныйРедакторСуммToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripLabel1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
