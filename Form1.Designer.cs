@@ -71,8 +71,7 @@ namespace EgissoApp
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(37, 17);
-            this.toolStripStatusLabel1.Text = "Итоги";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStrip1
             // 
@@ -109,6 +108,7 @@ namespace EgissoApp
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(106, 22);
             this.toolStripButton2.Text = "Редактировать";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripLabel1
             // 
@@ -122,6 +122,7 @@ namespace EgissoApp
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(71, 22);
             this.toolStripButton3.Text = "Удалить";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // dataGridView1
             // 
@@ -132,6 +133,7 @@ namespace EgissoApp
             this.dataGridView1.Location = new System.Drawing.Point(0, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(800, 379);
             this.dataGridView1.TabIndex = 2;
             // 
@@ -160,20 +162,20 @@ namespace EgissoApp
             // импортИзCSVToolStripMenuItem
             // 
             this.импортИзCSVToolStripMenuItem.Name = "импортИзCSVToolStripMenuItem";
-            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.импортИзCSVToolStripMenuItem.Text = "Импорт из CSV";
             // 
             // экспортВXMLToolStripMenuItem
             // 
             this.экспортВXMLToolStripMenuItem.Name = "экспортВXMLToolStripMenuItem";
-            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортВXMLToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.экспортВXMLToolStripMenuItem.Text = "Экспорт в CSV";
             this.экспортВXMLToolStripMenuItem.Click += new System.EventHandler(this.экспортВXMLToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // массовыеОперацииToolStripMenuItem
@@ -208,8 +210,6 @@ namespace EgissoApp
             // 
             this.saveFileDialog1.DefaultExt = "csv";
             this.saveFileDialog1.Filter = "CSV файлы|*.csv";
-            this.saveFileDialog1.FileName = "Export_" + 
-                DateTime.Now.ToString().Replace(".", "_").Replace(":", "_").Replace(" ", "_");
             // 
             // Form1
             // 

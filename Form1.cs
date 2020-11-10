@@ -28,22 +28,22 @@ namespace EgissoApp
         private void UpdateDGV ()
         {
             DataSet ds = new DataSet(); //Создаем объект класса DataSet
-
             string sql = "Select * From [table]"; //Sql запрос (достать все из таблицы table)
-
             string path = "egissodb.db"; //Путь к файлу БД
-
             string ConnectionString = "Data Source=" + path + ";Version=3;New=True;Compress=True;"; //Строка соеденения (так хочет sqlite)
-
             SQLiteConnection conn = new SQLiteConnection(ConnectionString); //Создаем соеденение
-
             SQLiteDataAdapter da = new SQLiteDataAdapter(sql, conn);//Создаем объект класса DataAdapter (тут мы передаем наш запрос и получаем ответ)
-
             da.Fill(ds);//Заполняем DataSet cодержимым DataAdapter'a
-
             dataGridView1.DataSource = ds.Tables[0].DefaultView;//Заполняем созданный на форме dataGridView1
-
+            dataGridView1.Columns[0].Visible = false;
             conn.Close();//Закрываем соединение
+            double amountDGV = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                amountDGV += Double.Parse(row.Cells[33].Value.ToString());
+            }
+            toolStripStatusLabel1.Text = $"Всего записей: {dataGridView1.Rows.Count} на сумму {amountDGV}.";
+
         }
 
 
@@ -82,6 +82,9 @@ namespace EgissoApp
                 }
             }
 
+            int rowCount = 0;
+            double amountExport = 0;
+
             // get the rows data
             for (int currentRow = 0; currentRow < RowCount; currentRow++)
             {
@@ -89,6 +92,7 @@ namespace EgissoApp
                 {
                     for (int currentCol = 1; currentCol < ColumnCount; currentCol++)
                     {
+                        if (currentCol == 33) amountExport += Double.Parse(dataGridView1.Rows[currentRow].Cells[currentCol].Value.ToString());
                         if (dataGridView1.Rows[currentRow].Cells[currentCol].Value != null)
                         {
                             sb.Append(dataGridView1.Rows[currentRow].Cells[currentCol].Value.ToString());
@@ -100,18 +104,50 @@ namespace EgissoApp
                         else
                         {
                             sb.AppendLine();
+                            rowCount++;
                         }
                     }
                 }
             }
+            saveFileDialog1.FileName = $"Export_{DateTime.Now.ToString().Replace(".", "_").Replace(":", "_").Replace(" ", "_")}";
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
             string filename = saveFileDialog1.FileName;
             // сохраняем текст в файл
-            System.IO.File.WriteAllText(filename, sb.ToString(), Encoding.GetEncoding(1251));
-            MessageBox.Show("Файл сохранен");
-            //System.IO.File.WriteAllText(@"C:\Users\Администратор\Desktop\DGV_CSV_EXPORT.csv", sb.ToString(), Encoding.GetEncoding(1251));
+            File.WriteAllText(filename, sb.ToString(), Encoding.GetEncoding(1251));
+            MessageBox.Show($"Файл сохранен!\nЧисло строк: {rowCount}\nСумма:  {amountExport}");
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            //Editform f = new Editform();
+            //f.Show();
+            //f.FormClosed += (obj, arg) =>
+            //{
+            //    UpdateDGV();
+
+            //};
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                SQLiteConnection conn = new SQLiteConnection("Data Source=egissodb.db;Version=3;New=True;Compress=True;");
+                conn.Open();
+                SQLiteCommand sQLiteCmd = new SQLiteCommand($"DELETE FROM [table] WHERE id = {id}", conn);
+                sQLiteCmd.ExecuteNonQuery();
+                conn.Close();
+                UpdateDGV();
+            }
+            catch
+            {
+                MessageBox.Show("Не удалось удалить строку!");
+            }
+            
         }
     }
 }
