@@ -2,7 +2,7 @@
 
 namespace EgissoApp
 {
-    class SnilsValidator
+    public class SnilsValidator
     {
         public static Boolean SNILSValidate(String snils)
         {
