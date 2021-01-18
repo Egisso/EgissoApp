@@ -11,6 +11,7 @@ namespace EgissoApp
                 snils = snils.Replace(" ", "").Replace("-", "");
                 int controlSum = SNILSContolCalc(snils);
                 int strControlSum = int.Parse(snils.Substring(9, 2));
+                if (snils == "00000000000") return false;
                 return (controlSum == strControlSum);
             }
             catch
