@@ -49,6 +49,7 @@
             this.упрощенныйРедакторСуммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -91,7 +92,6 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(115, 22);
             this.toolStripButton1.Text = "Добавить строку";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator1
             // 
@@ -146,6 +146,7 @@
             this.импортИзCSVToolStripMenuItem.Name = "импортИзCSVToolStripMenuItem";
             this.импортИзCSVToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.импортИзCSVToolStripMenuItem.Text = "Импорт из CSV";
+            this.импортИзCSVToolStripMenuItem.Click += new System.EventHandler(this.импортИзCSVToolStripMenuItem_Click);
             // 
             // экспортВXMLToolStripMenuItem
             // 
@@ -185,17 +186,23 @@
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
-            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // listView1
             // 
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 49);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(800, 379);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "export.csv";
+            this.openFileDialog1.Filter = "CSV файлы|*.csv";
             // 
             // Form1
             // 
@@ -244,6 +251,7 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripLabel1;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
