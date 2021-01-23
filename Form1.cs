@@ -20,38 +20,44 @@ namespace EgissoApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // заголовки для DGV из класса Mera
+            Mera mera = new Mera();
+            System.Reflection.FieldInfo[] fi = mera.GetType().GetFields();
+            dataGridView1.ColumnCount = fi.Length;
+            for (int i = 0; i < fi.Length; i++) dataGridView1.Columns[i].HeaderText = fi[i].Name;
         }
 
         private void импортИзCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listView1.Clear();
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
+            
             // получаем выбранный файл
             string filename = openFileDialog1.FileName;
             // читаем файл в строки
             string[] fileTextLine = System.IO.File.ReadAllLines(filename, Encoding.GetEncoding(1251));
-            // получаем коллекцию значений из строки
-            string[] items = fileTextLine[0].Split(';');
-            // заполняем заголовки
-            foreach (string item in items)
-            {
-                listView1.Columns.Add(item);
-            }
-            // заполняем строки ЛистВьюера
+            string[] headers = fileTextLine[0].Split(';');
+            // заполняем строки DGV
             for (int i = 1; i < fileTextLine.Count(); i++)
             {
-                items = fileTextLine[i].Split(';');
-                listView1.Items.Add(new ListViewItem(items));
-                // проверим строку и ошибки покрасим
-                if (true) listView1.Items[0].BackColor = Color.Empty;
+                Mera mera = new Mera();
+                string[] items = fileTextLine[i].Split(';');
+                foreach (string item in items)
+                {
+                    mera.SetField(headers[Array.IndexOf(items, item)], item);
+                }
+                // теперь эту меру как то нужно проверить
+
+                // новая строка из класса Mera
+                dataGridView1.Rows.Add(mera.MassivForWrite());
             }
-            if (listView1.Items.Count > 0)
+            if (dataGridView1.RowCount > 0)
             {
-                listView1.FocusedItem = listView1.Items[0];
-                listView1.Items[0].Selected = true;
+                dataGridView1.Rows[0].Selected = true;
+                //listView1.FocusedItem = listView1.Items[0];
+                //listView1.Items[0].Selected = true;
             }
-            Form1.ActiveForm.ActiveControl = listView1;
+            Form1.ActiveForm.ActiveControl = dataGridView1;
         }
     }
 }
