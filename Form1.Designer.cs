@@ -225,6 +225,7 @@ namespace EgissoApp
             this.MinimumSize = new System.Drawing.Size(808, 477);
             this.Name = "Form1";
             this.Text = "Формирование данных для ЕГИССО";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

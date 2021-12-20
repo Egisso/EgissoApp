@@ -500,7 +500,7 @@ namespace EgissoApp
                         SQLiteConnection connection =
                             new SQLiteConnection("Data Source=egissodb.db;Version=3;New=True;Compress=True;");
                         connection.Open();
-                        //SQLiteCommand command = new SQLiteCommand("INSERT INTO 'table' ('RecType') VALUES ('Reason');", connection);
+                       
                         SQLiteCommand command = new SQLiteCommand("INSERT INTO 'table' (" +
                         "'RecType'," +
                         "'LMSZID'," +
@@ -578,6 +578,13 @@ namespace EgissoApp
                         "''," +
                         "''," +
                         "'');", connection);
+                        
+                        //SQLiteCommand command = new SQLiteCommand("UPDATE 'table' " +
+                        //    $"SET FamilyName_recip = '{FamilyName_recip.Text}', " +
+                        //    $"Name_recip = '{Name_recip.Text}' " +
+                        //    $"WHERE id = 1;", connection);
+
+
                         command.ExecuteNonQuery();
                         connection.Close();
                         
@@ -592,6 +599,64 @@ namespace EgissoApp
 
             }
 
+        }
+
+        public void LoadDataFromSelectedRow (DataGridViewRow row)
+        {
+            string id = row.Cells[0].Value.ToString();
+            bool itsScool = true;
+            if (row.Cells[2].Value.ToString() == "d8a8d780-d3b4-42f3-91f6-9fe7374ce1f9")
+            {
+                timer1.Enabled = false;
+                label29.Visible = true;
+                label29.ForeColor = Color.Black;
+                groupBox1.Enabled = true;
+                groupBox2.Enabled = false;
+                groupBox3.Enabled = true;
+                radioButton1.Checked = true;
+            }
+            else
+            {
+                timer1.Enabled = false;
+                label29.Visible = true;
+                label29.ForeColor = Color.Black;
+                groupBox1.Enabled = true;
+                groupBox2.Enabled = true;
+                groupBox3.Enabled = true;
+                itsScool = false;
+                radioButton2.Checked = true;
+            }
+            FamilyName_recip.Text = row.Cells[6].Value.ToString();
+            if (Check.FamilyName(FamilyName_recip)) SetPict.Checked(pict_Fam_Recip);
+            else SetPict.ErrorFamName(pict_Fam_Recip);
+            Name_recip.Text = row.Cells[7].Value.ToString();
+            if (Check.FamilyName(Name_recip)) SetPict.Checked(pict_Name_Recip);
+            else SetPict.ErrorFamName(pict_Name_Recip);
+            Patronymic_recip.Text = row.Cells[8].Value.ToString();
+            if (Check.FamilyName(Patronymic_recip)
+                || (Patronymic_recip).Text == "")
+                SetPict.Checked(pict_Patronymic_recip);
+            else SetPict.ErrorPatronymic(pict_Patronymic_recip);
+            SNILS_recip.Text = row.Cells[5].Value.ToString();
+            if (Check.Snils(SNILS_recip))
+                SetPict.Checked(pict_Snils_Recip);
+            else SetPict.ErrorSnils(pict_Snils_Recip);
+            if (row.Cells[9].Value.ToString() == "М") Gender_recip.SelectedIndex = 0;
+            else Gender_recip.SelectedIndex = 1;
+            BirthDate_recip.Value = DateTime.Parse(row.Cells[10].Value.ToString());
+            if (row.Cells[11].Value.ToString() == "") doctype_recip.SelectedIndex = 0;
+            else if (row.Cells[11].Value.ToString() == "03") doctype_recip.SelectedIndex = 1;
+            else doctype_recip.SelectedIndex = 2;
+
+
+            decision_date.Value = DateTime.Parse(row.Cells[27].Value.ToString());
+            dateStart.Value = DateTime.Parse(row.Cells[28].Value.ToString());
+            dateFinish.Value = DateTime.Parse(row.Cells[29].Value.ToString());
+            amount.Value = Decimal.Parse(row.Cells[33].Value.ToString());
+
+            
+
+            //MessageBox.Show($"Ид выбранной строки: {id}"); // Work!!!
         }
 
     }

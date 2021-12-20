@@ -122,13 +122,23 @@ namespace EgissoApp
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            //Editform f = new Editform();
-            //f.Show();
-            //f.FormClosed += (obj, arg) =>
-            //{
-            //    UpdateDGV();
-
-            //};
+            Editform f = new Editform();
+            f.Show();
+            try
+            {
+                // ид редактируемой строки
+                //string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                // создать метод в эдитформ и передать туда выбраную строку
+                f.LoadDataFromSelectedRow(dataGridView1.SelectedRows[0]);
+            }
+            catch
+            {
+                MessageBox.Show("Опс ошибочка!");
+            }
+            f.FormClosed += (obj, arg) =>
+            {
+                UpdateDGV();
+            };
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
